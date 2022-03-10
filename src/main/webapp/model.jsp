@@ -13,15 +13,14 @@
         response.sendRedirect("index.jsp");
     }
 %>
-<h1>Welcome ${name}</h1>
+<h1>${gname}</h1>
+<p>Model: ${model}</p>
+<p>Pilot: ${pilot}</p>
+<img src="img/${model}.png">
 
-<form action="search" method="post">
-    Enter model#: <input type="text" name="model" placeholder="model#">
-    <input type="submit" value="search">
-</form>
-<br>
 <form action="logout">
     <input type="submit" value="logout">
 </form>
+<a href="welcome.jsp">Back</a>
 </body>
 </html>

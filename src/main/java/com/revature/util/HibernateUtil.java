@@ -1,5 +1,6 @@
 package com.revature.util;
 
+import com.revature.model.Gundam;
 import com.revature.model.User;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -27,6 +28,7 @@ public class HibernateUtil {
             configuration.setProperties(props);
 
             configuration.addAnnotatedClass(User.class);
+            configuration.addAnnotatedClass(Gundam.class);
 
             ServiceRegistry serviceRegistry = new StandardServiceRegistryBuilder().applySettings(configuration.getProperties()).build();
 

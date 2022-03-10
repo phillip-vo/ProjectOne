@@ -17,30 +17,11 @@
     ></script>
 </head>
 <body>
-<header>
-    <nav class="nav">
-        <ul>
-            <li><a href="#">Events</a></li>
-            <li><a href="#">Forums</a></li>
-            <li>
-                <a href="#" class="logo"><img src="img/logo-transparent.png" alt="logo" /></a>
-            </li>
-            <li><a href="#">Models</a></li>
-            <li><a href="#">About</a></li>
-        </ul>
-    </nav>
-</header>
-<section class="main-section">
-    <div class="circle-background">
-        <img src="img/gundam-unicorn-transparent.png" alt="gundam unicorn" class="main-img"/>
-    </div>
-    <div class="login-field">
         <form action="login" method="post">
-            Enter username: <input type="text" name="username"><br>
-            Enter password: <input type="password" name="password"><br>
+            Enter username: <input type="text" name="username" placeholder="username"><br>
+            Enter password: <input type="password" name="password" placeholder="password"><br>
             <input type="submit" value="login">
         </form>
-    </div>
 </section>
 <footer>
 
