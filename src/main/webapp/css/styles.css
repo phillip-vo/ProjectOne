@@ -1,0 +1,26 @@
+/* Color Variables */
+:root {
+    --dark: #333333;
+    --light: #c4c4c4;
+    --primary: #c85755;
+}
+
+/* Universal Styles */
+html {
+    box-sizing: border-box;
+    font-family: "Teko", sans-serif;
+    font-size: 16px;
+    color: var(--dark);
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: var(--dark);
+}
+

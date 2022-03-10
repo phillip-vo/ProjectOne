@@ -1,5 +1,6 @@
 package com.revature.servlet;
 
+import com.revature.model.User;
 import com.revature.repository.UserRepository;
 
 import javax.servlet.ServletException;
