@@ -36,16 +36,14 @@
         </div>
     </header>
     <section class="login-section">
-        <div>
+        <div class="login-container">
             <h1 id="h1-login">CONNECT.BUILD.LEARN</h1>
             <form action="login" method="post" class="login-form">
                 <input type="text" name="username" placeholder="USERNAME"><br>
                 <input type="password" name="password" placeholder="PASSWORD"><br>
                 <input type="submit" value="login">
             </form>
-            <form action="signup" method="post" class="signup-btn">
-                <input type="submit" value="SIGN UP">
-            </form>
+            <a href="signup.jsp" class="signup-btn">SIGN UP</a>
         </div>
     </section>
     <footer class="login-footer">

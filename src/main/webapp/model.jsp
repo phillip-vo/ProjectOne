@@ -23,9 +23,10 @@
     />
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/welcome.css">
+    <link rel="stylesheet" href="css/model.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
+<body class="bg-model">
 <%
     response.setHeader("Cache-Control", "no-cache, no-store, must-revalidate");
 
@@ -33,30 +34,44 @@
         response.sendRedirect("index.jsp");
     }
 %>
-<header>
-    <div class="welcome-logo">
-        <a href="#"><img src="img/zeon-gundam-black.png" class="logo"></a>
-        <h1 id="h1-welcome">WELCOME, ${name}</h1>
-    </div>
-    <div class="menu-icons">
-        <a href="https://twitter.com" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a>
-        <a href="https://www.pinterest.com" target="_blank"><i class="fa fa-pinterest-square fa-2x"></i></a>
-        <a href="https://www.facebook.com" target="_blank"><i id="right-border" class="fa fa-facebook-square fa-2x"></i></a>
-        <form action="logout">
-            <button type="submit" class="logout-btn">
-                <i class="fa fa-sign-in fa-2x"></i>
-            </button>
-        </form>
-    </div>
-</header>
-<h1>${gname}</h1>
-<p>Model: ${model}</p>
-<p>Pilot: ${pilot}</p>
-<img src="img/gundam/${model}.png">
+    <header>
+        <div class="welcome-logo">
+            <a href="#"><img src="img/zeon-gundam-black.png" class="logo"></a>
+            <h1 id="h1-welcome">WELCOME, ${name}</h1>
+        </div>
+        <div class="menu-icons">
+            <a href="https://twitter.com" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a>
+            <a href="https://www.pinterest.com" target="_blank"><i class="fa fa-pinterest-square fa-2x"></i></a>
+            <a href="https://www.facebook.com" target="_blank"><i id="right-border" class="fa fa-facebook-square fa-2x"></i></a>
+            <form action="logout">
+                <button type="submit" class="logout-btn">
+                    <i class="fa fa-sign-in fa-2x"></i>
+                </button>
+            </form>
+        </div>
+    </header>
+    <section class="model-section">
+        <div class="model-info">
+            <h1>${gname}</h1>
+            <p><strong>MODEL:</strong> ${model}</p>
+            <p><strong>PILOT:</strong> ${pilot}</p>
+            <p><strong>HISTORY:</strong></p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br>
+                exercitation ullamco laboris dolore eu fugiat nulla officia<br>
+                deserunt mollit anim id est laborum.</p>
 
-<form action="logout">
-    <input type="submit" value="logout">
-</form>
-<a href="welcome.jsp">Back</a>
+            <a href="welcome.jsp" class="back-btn"><i class="fa fa-arrow-circle-left fa-lg"></i></a>
+        </div>
+        <img src="img/gundam/${model}.jpg" class="gundam-image">
+    </section>
+
+
+
+<footer class="welcome-footer">
+    <div class="footer-nav">
+        <a href="#">FORUMS</a>
+        <a href="#">ABOUT</a>
+    </div>
+</footer>
 </body>
 </html>

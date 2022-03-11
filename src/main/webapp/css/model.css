@@ -1,0 +1,29 @@
+@import "welcome.css";
+
+.bg-model {
+    background-image: url("../img/background-model.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    background-position: right;
+}
+
+
+.gundam-image {
+    height: 400px;
+    width: 415px;
+}
+
+.model-section {
+    display: flex;
+    justify-content: center;
+    padding-right: 25em;
+}
+
+.model-info {
+    margin-right: 1em;
+}
+
+.back-btn {
+    color: var(--clr-dark);
+}

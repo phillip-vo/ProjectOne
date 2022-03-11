@@ -133,16 +133,10 @@ header {
 
 .signup-btn {
     padding-top: 1em;
+    color: var(--clr-dark);
 }
 
-.signup-btn input[type=submit] {
-    border: none;
-    background-color: white;
-    font-weight: 600;
-    cursor: pointer;
-}
-
-.signup-btn input[type=submit]:hover {
+.signup-btn:hover {
     opacity: .6;
 }
 

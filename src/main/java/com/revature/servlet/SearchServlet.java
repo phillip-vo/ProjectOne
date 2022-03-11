@@ -38,9 +38,9 @@ public class SearchServlet extends HttpServlet {
 
             HttpSession session = request.getSession();
 
-            session.setAttribute("gname", gundam.getName());
-            session.setAttribute("model", gundam.getModel());
-            session.setAttribute("pilot", gundam.getPilot());
+            session.setAttribute("gname", gundam.getName().toUpperCase());
+            session.setAttribute("model", gundam.getModel().toUpperCase());
+            session.setAttribute("pilot", gundam.getPilot().toUpperCase());
 
             response.sendRedirect("model.jsp");
 
