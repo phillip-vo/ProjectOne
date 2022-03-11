@@ -19,9 +19,11 @@ public class LoginServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
 
     UserService userService = new UserService();
-    List<User> users = userService.getAllUser();
+    List<User> users;
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+        users = userService.getAllUser();
 
         String username = request.getParameter("username");
         String password = request.getParameter("password");

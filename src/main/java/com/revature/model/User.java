@@ -1,9 +1,19 @@
 package com.revature.model;
 
+import com.fasterxml.jackson.annotation.JsonIdentityInfo;
+import com.fasterxml.jackson.annotation.ObjectIdGenerators;
+
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name="users")
+@JsonIdentityInfo(
+        //this is to stop recursive hibernate joins
+        generator = ObjectIdGenerators.PropertyGenerator.class,
+        property = "id"
+)
 public class User {
 
     @Id
@@ -22,6 +32,9 @@ public class User {
 
     @Column(name="email")
     private String email;
+
+    @OneToMany(mappedBy = "user")
+    private List<Gundam> gundams = new ArrayList<Gundam>();
 
     public User() {
 
@@ -81,6 +94,14 @@ public class User {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public List<Gundam> getGundams() {
+        return gundams;
+    }
+
+    public void setGundams(List<Gundam> gundams) {
+        this.gundams = gundams;
     }
 
     @Override

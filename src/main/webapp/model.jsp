@@ -55,10 +55,11 @@
             <h1>${gname}</h1>
             <p><strong>MODEL:</strong> ${model}</p>
             <p><strong>PILOT:</strong> ${pilot}</p>
-            <p><strong>HISTORY:</strong></p>
+            <p><strong>DESCRIPTION:</strong></p>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br>
                 exercitation ullamco laboris dolore eu fugiat nulla officia<br>
                 deserunt mollit anim id est laborum.</p>
+            <p><strong>UPLOADED BY USER:</strong> ${user}</p>
 
             <a href="welcome.jsp" class="back-btn"><i class="fa fa-arrow-circle-left fa-lg"></i></a>
         </div>
@@ -67,11 +68,8 @@
 
 
 
-<footer class="welcome-footer">
-    <div class="footer-nav">
-        <a href="#">FORUMS</a>
-        <a href="#">ABOUT</a>
-    </div>
-</footer>
+    <footer class="welcome-footer">
+        <h2>PROJECT GUNDAM</h2>
+    </footer>
 </body>
 </html>

@@ -1,9 +1,17 @@
 package com.revature.model;
 
+import com.fasterxml.jackson.annotation.JsonIdentityInfo;
+import com.fasterxml.jackson.annotation.ObjectIdGenerators;
+
 import javax.persistence.*;
 
 @Entity
 @Table(name="gundams")
+@JsonIdentityInfo(
+        //this is to stop recursive hibernate joins
+        generator = ObjectIdGenerators.PropertyGenerator.class,
+        property = "id"
+)
 public class Gundam {
 
     @Id
@@ -19,6 +27,10 @@ public class Gundam {
 
     @Column(name="pilot")
     private String pilot;
+
+    @ManyToOne
+    @JoinColumn(name="user_id", nullable=false)
+    private User user;
 
     public Gundam() {}
 
@@ -68,6 +80,14 @@ public class Gundam {
         this.pilot = pilot;
     }
 
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
+
     @Override
     public String toString() {
         return "Gundam{" +
@@ -75,6 +95,7 @@ public class Gundam {
                 ", name='" + name + '\'' +
                 ", model='" + model + '\'' +
                 ", pilot='" + pilot + '\'' +
+                ", user=" + user +
                 '}';
     }
 }

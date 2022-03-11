@@ -62,10 +62,7 @@
     </section>
 
     <footer class="welcome-footer">
-        <div class="footer-nav">
-            <a href="#">FORUMS</a>
-            <a href="#">ABOUT</a>
-        </div>
+        <h2>PROJECT GUNDAM</h2>
     </footer>
 </body>
 </html>

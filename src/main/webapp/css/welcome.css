@@ -85,26 +85,16 @@ body, html {
 .welcome-image {
     z-index: 1;
     height: 700px;
-    overflow: hidden;
 }
 
 .welcome-footer {
+    color: white;
+    height: 75px;
+    width: 100%;
     position: absolute;
     bottom: 0;
-    height: 100px;
-    width: 100%;
     background-color: var(--clr-dark);
-    display: flex;
-    align-items: center;
+    padding-left: 1em;
 }
 
-.footer-nav a {
-    color: white;
-    font-size: var(--fs-h2);
-    text-decoration: none;
-    margin-left: 2rem;
-}
 
-.footer-nav a:hover {
-    opacity: .5;
-}

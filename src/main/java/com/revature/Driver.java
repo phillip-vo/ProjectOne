@@ -15,19 +15,11 @@ public class Driver {
 
         GundamService gs = new GundamService();
 
-        List<Gundam> gundams = gs.getAllGundam();
+        Gundam gundam = new Gundam();
 
-        String model = "XXXG-01W";
+        gundam = gs.getGundamById(3);
 
-        Gundam gundam = null;
-
-        for(Gundam g : gundams) {
-            if(model.equals(g.getModel())) {
-                gundam = g;
-            }
-        }
-
-        System.out.println("Found gundam: " + gundam);
+        System.out.println(gundam.getUser());
 
     }
 }

@@ -20,9 +20,10 @@ public class SearchServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
 
     GundamService gundamService = new GundamService();
-    List<Gundam> gundams = gundamService.getAllGundam();
+    List<Gundam> gundams;
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        gundams = gundamService.getAllGundam();
 
         String modelName = request.getParameter("model");
 
@@ -41,6 +42,7 @@ public class SearchServlet extends HttpServlet {
             session.setAttribute("gname", gundam.getName().toUpperCase());
             session.setAttribute("model", gundam.getModel().toUpperCase());
             session.setAttribute("pilot", gundam.getPilot().toUpperCase());
+            session.setAttribute("user", gundam.getUser().getUsername().toUpperCase());
 
             response.sendRedirect("model.jsp");
 

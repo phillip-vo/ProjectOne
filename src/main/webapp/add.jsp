@@ -42,23 +42,17 @@
         <a href="index.jsp"><i class="fa fa-sign-in fa-2x"></i></a>
     </div>
 </header>
-<section class="signup-section">
-    <form action="signup" method="post" class="signup-form">
+<section class="add-section">
+    <form action="add" method="post" class="add-form">
         <div>
-            <h1>REGISTER</h1>
-            <p>PLEASE FILL IN THIS FORM TO CREATE AN ACCOUNT.</p>
+            <h1></h1>
             <input type="text" name="name" placeholder="NAME"><br>
-            <input type="text" name="email" placeholder="EMAIL"><br>
-            <input type="text" name="username" placeholder="USERNAME"><br>
-            <input type="password" name="password" placeholder="PASSWORD"><br>
+            <input type="text" name="model" placeholder="EMAIL"><br>
+            <input type="text" name="pilot" placeholder="USERNAME"><br>
         </div>
-        <div>
-            <p>ALREADY HAVE AN ACCOUNT? <a href="index.jsp">SIGN IN</a></p>
-        </div>
-        <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
-        <button type="submit" class="signup-btn">SIGN UP</button>
+
+        <button type="submit" class="signup-btn">ADD</button>
     </form>
-    <img src="img/gundam-signup.png" alt="https://aaltomies.files.wordpress.com/2016/02/li8a02ey.jpg" class="signup-image">
 </section>
 
 <footer class="login-footer signup-footer">
