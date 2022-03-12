@@ -18,8 +18,7 @@ public class GundamRepositoryImpl implements GundamRepository {
     @Override
     public void save(Gundam gundam) {
         Transaction transaction = null;
-        try {
-            Session session = HibernateUtil.getSession();
+        try (Session session = HibernateUtil.getSession()){
 
             transaction = session.beginTransaction();
 
