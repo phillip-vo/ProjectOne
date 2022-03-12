@@ -66,8 +66,6 @@
         <img src="img/gundam/${model}.jpg" class="gundam-image">
     </section>
 
-
-
     <footer class="welcome-footer">
         <h2>PROJECT GUNDAM</h2>
     </footer>

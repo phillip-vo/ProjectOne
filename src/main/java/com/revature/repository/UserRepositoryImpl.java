@@ -2,6 +2,7 @@ package com.revature.repository;
 
 import com.revature.model.User;
 import com.revature.util.HibernateUtil;
+import org.apache.log4j.Logger;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 import org.hibernate.query.Query;
@@ -10,6 +11,8 @@ import java.io.IOException;
 import java.util.List;
 
 public class UserRepositoryImpl implements UserRepository {
+
+    private static Logger logger = Logger.getLogger(HibernateUtil.class);
 
     @Override
     public void save(User user) {
@@ -25,7 +28,7 @@ public class UserRepositoryImpl implements UserRepository {
             if (transaction != null) {
                 transaction.rollback();
             }
-            e.printStackTrace();
+            logger.warn("Exception creating a new user", e);
         }
     }
 
@@ -44,7 +47,7 @@ public class UserRepositoryImpl implements UserRepository {
             if (transaction != null) {
                 transaction.rollback();
             }
-            e.printStackTrace();
+            logger.warn("Exception updating user", e);
         }
     }
 
@@ -67,7 +70,7 @@ public class UserRepositoryImpl implements UserRepository {
             if (transaction != null) {
                 transaction.rollback();
             }
-            e.printStackTrace();
+            logger.warn("Exception deleting customer", e);
         }
     }
 
@@ -87,7 +90,7 @@ public class UserRepositoryImpl implements UserRepository {
             if (transaction != null) {
                 transaction.rollback();
             }
-            e.printStackTrace();
+            logger.warn("Exception retrieving user", e);
         }
         return user;
     }
@@ -107,7 +110,7 @@ public class UserRepositoryImpl implements UserRepository {
             if (transaction != null) {
                 transaction.rollback();
             }
-            e.printStackTrace();
+            logger.warn("Exception getting all users", e);
         }
         return users;
     }
@@ -129,7 +132,7 @@ public class UserRepositoryImpl implements UserRepository {
             return user;
 
         } catch (IOException e) {
-            e.printStackTrace();
+            logger.warn("Exception authenticating user", e);
         }
 
         return null;

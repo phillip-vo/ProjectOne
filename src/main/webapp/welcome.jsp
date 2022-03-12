@@ -57,7 +57,6 @@
                 <button type="submit"><i class="fa fa-search"></i></button>
             </form>
         </div>
-        
         <img src="img/freedom_gundam_lineart_by_mofomegax_d1150g-fullview.png" class="welcome-image">
     </section>
 

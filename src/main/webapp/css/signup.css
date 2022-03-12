@@ -4,13 +4,11 @@
     overflow: hidden;
     height: 80%;
     width: 100%;
-
 }
 
 .signup-image {
     width: 387px;
     height: 570px;
-
 }
 
 .signup-form input[type=text],
@@ -18,6 +16,10 @@
 {
     margin-top: 5px;
     width: 300px;
+}
+
+.signup-form a {
+    color: var(--clr-dark);
 }
 
 .signup-btn {

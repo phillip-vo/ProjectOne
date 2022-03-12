@@ -3,6 +3,7 @@ package com.revature.repository;
 import com.revature.model.Gundam;
 import com.revature.model.User;
 import com.revature.util.HibernateUtil;
+import org.apache.log4j.Logger;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 import org.hibernate.query.Query;
@@ -12,10 +13,13 @@ import java.util.List;
 
 public class GundamRepositoryImpl implements GundamRepository {
 
+    private static Logger logger = Logger.getLogger(HibernateUtil.class);
+
     @Override
     public void save(Gundam gundam) {
         Transaction transaction = null;
-        try (Session session = HibernateUtil.getSession()) {
+        try {
+            Session session = HibernateUtil.getSession();
 
             transaction = session.beginTransaction();
 
@@ -26,7 +30,7 @@ public class GundamRepositoryImpl implements GundamRepository {
             if (transaction != null) {
                 transaction.rollback();
             }
-            e.printStackTrace();
+            logger.warn("Exception creating a new gundam", e);
         }
     }
 
@@ -45,7 +49,7 @@ public class GundamRepositoryImpl implements GundamRepository {
             if (transaction != null) {
                 transaction.rollback();
             }
-            e.printStackTrace();
+            logger.warn("Exception updating gundam", e);
         }
     }
 
@@ -67,7 +71,7 @@ public class GundamRepositoryImpl implements GundamRepository {
             if (transaction != null) {
                 transaction.rollback();
             }
-            e.printStackTrace();
+            logger.warn("Exception deleting gundam", e);
         }
     }
 
@@ -87,7 +91,7 @@ public class GundamRepositoryImpl implements GundamRepository {
             if (transaction != null) {
                 transaction.rollback();
             }
-            e.printStackTrace();
+            logger.warn("Exception retrieving gundam", e);
         }
         return gundam;
     }
@@ -108,7 +112,7 @@ public class GundamRepositoryImpl implements GundamRepository {
             if (transaction != null) {
                 transaction.rollback();
             }
-            e.printStackTrace();
+            logger.warn("Exception getting all gundam", e);
         }
         return gundams;
     }

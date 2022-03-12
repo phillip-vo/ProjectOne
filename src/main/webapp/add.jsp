@@ -30,10 +30,15 @@
 <%
     response.setHeader("Cache-Control", "no-cache, no-store, must-revalidate");
 
+    if(session.getAttribute("name") == null) {
+        response.sendRedirect("index.jsp");
+    }
+
 %>
 <header>
     <div class="welcome-logo">
         <a href="index.jsp"><img src="img/zeon-gundam-black.png" class="logo"></a>
+        <h1 id="h1-welcome">WELCOME, ${name}</h1>
     </div>
     <div class="menu-icons">
         <a href="https://twitter.com" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a>
@@ -42,21 +47,14 @@
         <a href="index.jsp"><i class="fa fa-sign-in fa-2x"></i></a>
     </div>
 </header>
-<section class="add-section">
-    <form action="add" method="post" class="add-form">
+<section class="signup-section">
+    <form action="add" method="post">
         <div>
-            <h1></h1>
-            <input type="text" name="name" placeholder="NAME"><br>
-            <input type="text" name="model" placeholder="EMAIL"><br>
-            <input type="text" name="pilot" placeholder="USERNAME"><br>
-        </div>
-
-        <button type="submit" class="signup-btn">ADD</button>
+            <h1>ADD GUNDAM</h1>
+            <input type="text" name="name" placeholder="GUNDAM NAME"><br>
+            <input type="text" name="model" placeholder="MODEL NO."><br>
+            <input type="text" name="pilot" placeholder="PILOT"><br><br>
+            <input type="submit" value="submit">
     </form>
-</section>
-
-<footer class="login-footer signup-footer">
-    <h2>PROJECT GUNDAM</h2>
-</footer>
 </body>
 </html>
