@@ -9833,3 +9833,761 @@ com.microsoft.sqlserver.jdbc.SQLServerException: The connection is broken and re
 2022-03-11 16:20:31 DEBUG EntityPrinter:117 - com.revature.model.Gundam{pilot=Yonem Kirks, name=Zaku 1 Sniper, model=MS-05L, gundamId=4, user=com.revature.model.User#2}
 2022-03-11 16:20:31 DEBUG LogicalConnectionManagedImpl:174 - Initiating JDBC connection release from afterTransaction
 2022-03-11 16:20:31 DEBUG LogicalConnectionManagedImpl:174 - Initiating JDBC connection release from afterTransaction
+2022-03-15 17:49:21 INFO  HibernateUtil:48 - getAllUser: getting all users
+2022-03-15 17:49:22 DEBUG logging:28 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2022-03-15 17:49:22 DEBUG IntegratorServiceImpl:46 - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+2022-03-15 17:49:22 DEBUG IntegratorServiceImpl:46 - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+2022-03-15 17:49:22 DEBUG IntegratorServiceImpl:46 - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+2022-03-15 17:49:22 INFO  Version:44 - HHH000412: Hibernate ORM core version 5.6.5.Final
+2022-03-15 17:49:22 INFO  Environment:184 - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=com.microsoft.sqlserver.jdbc.SQLServerDriver, hibernate.hbm2ddl.auto=update, hibernate.dialect=org.hibernate.dialect.SQLServerDialect, hibernate.connection.password=****, hibernate.connection.username=phillip013, hibernate.connection.url=jdbc:sqlserver://revaturevo.database.windows.net:1433;database=ProjectOneDB;user=phillip013@revaturevo;password={your_password_here};encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;, hibernate.bytecode.use_reflection_optimizer=false, hibernate.show_sql=true}
+2022-03-15 17:49:26 DEBUG IntegratorServiceImpl:46 - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+2022-03-15 17:49:26 DEBUG IntegratorServiceImpl:46 - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+2022-03-15 17:49:26 DEBUG IntegratorServiceImpl:46 - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+2022-03-15 17:49:26 DEBUG ServiceBinding:68 - Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+2022-03-15 17:49:26 DEBUG Configuration:672 - Building session factory using provided StandardServiceRegistry
+2022-03-15 17:49:27 DEBUG RegionFactoryInitiator:118 - Cannot default RegionFactory based on registered strategies as `[class org.hibernate.cache.ehcache.internal.SingletonEhcacheRegionFactory, class org.hibernate.cache.ehcache.internal.EhcacheRegionFactory]` RegionFactory strategies were registered
+2022-03-15 17:49:27 DEBUG RegionFactoryInitiator:49 - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+2022-03-15 17:49:27 INFO  Version:56 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-03-15 17:49:28 DEBUG BasicTypeRegistry:157 - Adding type registration boolean -> org.hibernate.type.BooleanType@14bf14d
+2022-03-15 17:49:28 DEBUG BasicTypeRegistry:157 - Adding type registration boolean -> org.hibernate.type.BooleanType@14bf14d
+2022-03-15 17:49:28 DEBUG BasicTypeRegistry:157 - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@14bf14d
+2022-03-15 17:49:28 DEBUG BasicTypeRegistry:157 - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@458c963
+2022-03-15 17:49:28 DEBUG BasicTypeRegistry:157 - Adding type registration true_false -> org.hibernate.type.TrueFalseType@4680ae9e
+2022-03-15 17:49:28 DEBUG BasicTypeRegistry:157 - Adding type registration yes_no -> org.hibernate.type.YesNoType@3b58d6ea
+2022-03-15 17:49:28 DEBUG BasicTypeRegistry:157 - Adding type registration byte -> org.hibernate.type.ByteType@6a002e3d
+2022-03-15 17:49:28 DEBUG BasicTypeRegistry:157 - Adding type registration byte -> org.hibernate.type.ByteType@6a002e3d
+2022-03-15 17:49:28 DEBUG BasicTypeRegistry:157 - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@6a002e3d
+2022-03-15 17:49:28 DEBUG BasicTypeRegistry:157 - Adding type registration character -> org.hibernate.type.CharacterType@1c6e1e42
+2022-03-15 17:49:28 DEBUG BasicTypeRegistry:157 - Adding type registration char -> org.hibernate.type.CharacterType@1c6e1e42
+2022-03-15 17:49:28 DEBUG BasicTypeRegistry:157 - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@1c6e1e42
+2022-03-15 17:49:28 DEBUG BasicTypeRegistry:157 - Adding type registration short -> org.hibernate.type.ShortType@93f1674
+2022-03-15 17:49:28 DEBUG BasicTypeRegistry:157 - Adding type registration short -> org.hibernate.type.ShortType@93f1674
+2022-03-15 17:49:28 DEBUG BasicTypeRegistry:157 - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@93f1674
+2022-03-15 17:49:28 DEBUG BasicTypeRegistry:157 - Adding type registration integer -> org.hibernate.type.IntegerType@5589dc8d
+2022-03-15 17:49:28 DEBUG BasicTypeRegistry:157 - Adding type registration int -> org.hibernate.type.IntegerType@5589dc8d
+2022-03-15 17:49:28 DEBUG BasicTypeRegistry:157 - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@5589dc8d
+2022-03-15 17:49:28 DEBUG BasicTypeRegistry:157 - Adding type registration long -> org.hibernate.type.LongType@177cb7dc
+2022-03-15 17:49:28 DEBUG BasicTypeRegistry:157 - Adding type registration long -> org.hibernate.type.LongType@177cb7dc
+2022-03-15 17:49:28 DEBUG BasicTypeRegistry:157 - Adding type registration java.lang.Long -> org.hibernate.type.LongType@177cb7dc
+2022-03-15 17:49:28 DEBUG BasicTypeRegistry:157 - Adding type registration float -> org.hibernate.type.FloatType@1eae213
+2022-03-15 17:49:28 DEBUG BasicTypeRegistry:157 - Adding type registration float -> org.hibernate.type.FloatType@1eae213
+2022-03-15 17:49:28 DEBUG BasicTypeRegistry:157 - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@1eae213
+2022-03-15 17:49:28 DEBUG BasicTypeRegistry:157 - Adding type registration double -> org.hibernate.type.DoubleType@7b189ee2
+2022-03-15 17:49:28 DEBUG BasicTypeRegistry:157 - Adding type registration double -> org.hibernate.type.DoubleType@7b189ee2
+2022-03-15 17:49:28 DEBUG BasicTypeRegistry:157 - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@7b189ee2
+2022-03-15 17:49:28 DEBUG BasicTypeRegistry:157 - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@37b7c8d4
+2022-03-15 17:49:28 DEBUG BasicTypeRegistry:157 - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@37b7c8d4
+2022-03-15 17:49:28 DEBUG BasicTypeRegistry:157 - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@7fd81f13
+2022-03-15 17:49:28 DEBUG BasicTypeRegistry:157 - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@7fd81f13
+2022-03-15 17:49:28 DEBUG BasicTypeRegistry:157 - Adding type registration string -> org.hibernate.type.StringType@3c045d11
+2022-03-15 17:49:28 DEBUG BasicTypeRegistry:157 - Adding type registration java.lang.String -> org.hibernate.type.StringType@3c045d11
+2022-03-15 17:49:28 DEBUG BasicTypeRegistry:157 - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@288aac3
+2022-03-15 17:49:28 DEBUG BasicTypeRegistry:157 - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@647bcf32
+2022-03-15 17:49:28 DEBUG BasicTypeRegistry:157 - Adding type registration url -> org.hibernate.type.UrlType@705a651a
+2022-03-15 17:49:28 DEBUG BasicTypeRegistry:157 - Adding type registration java.net.URL -> org.hibernate.type.UrlType@705a651a
+2022-03-15 17:49:28 DEBUG BasicTypeRegistry:157 - Adding type registration Duration -> org.hibernate.type.DurationType@d45a0b3
+2022-03-15 17:49:28 DEBUG BasicTypeRegistry:157 - Adding type registration java.time.Duration -> org.hibernate.type.DurationType@d45a0b3
+2022-03-15 17:49:28 DEBUG BasicTypeRegistry:157 - Adding type registration Instant -> org.hibernate.type.InstantType@58f066c3
+2022-03-15 17:49:28 DEBUG BasicTypeRegistry:157 - Adding type registration java.time.Instant -> org.hibernate.type.InstantType@58f066c3
+2022-03-15 17:49:28 DEBUG BasicTypeRegistry:157 - Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@3281428a
+2022-03-15 17:49:28 DEBUG BasicTypeRegistry:157 - Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@3281428a
+2022-03-15 17:49:28 DEBUG BasicTypeRegistry:157 - Adding type registration LocalDate -> org.hibernate.type.LocalDateType@1184eb93
+2022-03-15 17:49:28 DEBUG BasicTypeRegistry:157 - Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@1184eb93
+2022-03-15 17:49:28 DEBUG BasicTypeRegistry:157 - Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@13a81125
+2022-03-15 17:49:28 DEBUG BasicTypeRegistry:157 - Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@13a81125
+2022-03-15 17:49:28 DEBUG BasicTypeRegistry:157 - Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@24250df
+2022-03-15 17:49:28 DEBUG BasicTypeRegistry:157 - Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@24250df
+2022-03-15 17:49:28 DEBUG BasicTypeRegistry:157 - Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@2eb2afca
+2022-03-15 17:49:28 DEBUG BasicTypeRegistry:157 - Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@2eb2afca
+2022-03-15 17:49:28 DEBUG BasicTypeRegistry:157 - Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@4240fd27
+2022-03-15 17:49:28 DEBUG BasicTypeRegistry:157 - Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@4240fd27
+2022-03-15 17:49:28 DEBUG BasicTypeRegistry:157 - Adding type registration date -> org.hibernate.type.DateType@9c6bafe
+2022-03-15 17:49:28 DEBUG BasicTypeRegistry:157 - Adding type registration java.sql.Date -> org.hibernate.type.DateType@9c6bafe
+2022-03-15 17:49:28 DEBUG BasicTypeRegistry:157 - Adding type registration time -> org.hibernate.type.TimeType@2d708171
+2022-03-15 17:49:28 DEBUG BasicTypeRegistry:157 - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@2d708171
+2022-03-15 17:49:28 DEBUG BasicTypeRegistry:157 - Adding type registration timestamp -> org.hibernate.type.TimestampType@24e5d43b
+2022-03-15 17:49:28 DEBUG BasicTypeRegistry:157 - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@24e5d43b
+2022-03-15 17:49:28 DEBUG BasicTypeRegistry:157 - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@24e5d43b
+2022-03-15 17:49:28 DEBUG BasicTypeRegistry:157 - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@4b3dd54c
+2022-03-15 17:49:28 DEBUG BasicTypeRegistry:157 - Adding type registration calendar -> org.hibernate.type.CalendarType@95aa35a
+2022-03-15 17:49:28 DEBUG BasicTypeRegistry:157 - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@95aa35a
+2022-03-15 17:49:28 DEBUG BasicTypeRegistry:157 - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@95aa35a
+2022-03-15 17:49:28 DEBUG BasicTypeRegistry:157 - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@17c0fdb5
+2022-03-15 17:49:28 DEBUG BasicTypeRegistry:157 - Adding type registration calendar_time -> org.hibernate.type.CalendarTimeType@332c815b
+2022-03-15 17:49:28 DEBUG BasicTypeRegistry:157 - Adding type registration locale -> org.hibernate.type.LocaleType@46076153
+2022-03-15 17:49:28 DEBUG BasicTypeRegistry:157 - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@46076153
+2022-03-15 17:49:28 DEBUG BasicTypeRegistry:157 - Adding type registration currency -> org.hibernate.type.CurrencyType@4424eb1
+2022-03-15 17:49:28 DEBUG BasicTypeRegistry:157 - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@4424eb1
+2022-03-15 17:49:28 DEBUG BasicTypeRegistry:157 - Adding type registration timezone -> org.hibernate.type.TimeZoneType@42807b73
+2022-03-15 17:49:28 DEBUG BasicTypeRegistry:157 - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@42807b73
+2022-03-15 17:49:28 DEBUG BasicTypeRegistry:157 - Adding type registration class -> org.hibernate.type.ClassType@4d87dd13
+2022-03-15 17:49:28 DEBUG BasicTypeRegistry:157 - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@4d87dd13
+2022-03-15 17:49:28 DEBUG BasicTypeRegistry:157 - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@c8e09a
+2022-03-15 17:49:28 DEBUG BasicTypeRegistry:157 - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@c8e09a
+2022-03-15 17:49:28 DEBUG BasicTypeRegistry:157 - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@75f359d0
+2022-03-15 17:49:28 DEBUG BasicTypeRegistry:157 - Adding type registration binary -> org.hibernate.type.BinaryType@9f21181
+2022-03-15 17:49:28 DEBUG BasicTypeRegistry:157 - Adding type registration byte[] -> org.hibernate.type.BinaryType@9f21181
+2022-03-15 17:49:28 DEBUG BasicTypeRegistry:157 - Adding type registration [B -> org.hibernate.type.BinaryType@9f21181
+2022-03-15 17:49:28 DEBUG BasicTypeRegistry:157 - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@3919808d
+2022-03-15 17:49:28 DEBUG BasicTypeRegistry:157 - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@3919808d
+2022-03-15 17:49:28 DEBUG BasicTypeRegistry:157 - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@3919808d
+2022-03-15 17:49:28 DEBUG BasicTypeRegistry:157 - Adding type registration row_version -> org.hibernate.type.RowVersionType@a0e38fa
+2022-03-15 17:49:28 DEBUG BasicTypeRegistry:157 - Adding type registration image -> org.hibernate.type.ImageType@602d80b9
+2022-03-15 17:49:28 DEBUG BasicTypeRegistry:157 - Adding type registration characters -> org.hibernate.type.CharArrayType@579ab61a
+2022-03-15 17:49:28 DEBUG BasicTypeRegistry:157 - Adding type registration char[] -> org.hibernate.type.CharArrayType@579ab61a
+2022-03-15 17:49:28 DEBUG BasicTypeRegistry:157 - Adding type registration [C -> org.hibernate.type.CharArrayType@579ab61a
+2022-03-15 17:49:28 DEBUG BasicTypeRegistry:157 - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@34ca0aa
+2022-03-15 17:49:28 DEBUG BasicTypeRegistry:157 - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@34ca0aa
+2022-03-15 17:49:28 DEBUG BasicTypeRegistry:157 - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@34ca0aa
+2022-03-15 17:49:28 DEBUG BasicTypeRegistry:157 - Adding type registration text -> org.hibernate.type.TextType@3efb689f
+2022-03-15 17:49:28 DEBUG BasicTypeRegistry:157 - Adding type registration ntext -> org.hibernate.type.NTextType@360af2e3
+2022-03-15 17:49:28 DEBUG BasicTypeRegistry:157 - Adding type registration blob -> org.hibernate.type.BlobType@513cb2f4
+2022-03-15 17:49:28 DEBUG BasicTypeRegistry:157 - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@513cb2f4
+2022-03-15 17:49:28 DEBUG BasicTypeRegistry:157 - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@1336fb1d
+2022-03-15 17:49:29 DEBUG BasicTypeRegistry:157 - Adding type registration clob -> org.hibernate.type.ClobType@1fa27e9
+2022-03-15 17:49:29 DEBUG BasicTypeRegistry:157 - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@1fa27e9
+2022-03-15 17:49:29 DEBUG BasicTypeRegistry:157 - Adding type registration nclob -> org.hibernate.type.NClobType@4b4a976b
+2022-03-15 17:49:29 DEBUG BasicTypeRegistry:157 - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@4b4a976b
+2022-03-15 17:49:29 DEBUG BasicTypeRegistry:157 - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@6acfea79
+2022-03-15 17:49:29 DEBUG BasicTypeRegistry:157 - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@64cb0b29
+2022-03-15 17:49:29 DEBUG BasicTypeRegistry:157 - Adding type registration serializable -> org.hibernate.type.SerializableType@3fb6d7a4
+2022-03-15 17:49:29 DEBUG BasicTypeRegistry:157 - Adding type registration object -> org.hibernate.type.ObjectType@492686b8
+2022-03-15 17:49:29 DEBUG BasicTypeRegistry:157 - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@492686b8
+2022-03-15 17:49:29 DEBUG BasicTypeRegistry:157 - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@7af27837
+2022-03-15 17:49:29 DEBUG BasicTypeRegistry:157 - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@198e299d
+2022-03-15 17:49:29 DEBUG BasicTypeRegistry:157 - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@743752b4
+2022-03-15 17:49:29 DEBUG BasicTypeRegistry:157 - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@12a44465
+2022-03-15 17:49:29 DEBUG BasicTypeRegistry:157 - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@7bfeb5c6
+2022-03-15 17:49:29 DEBUG BasicTypeRegistry:157 - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@1354b9e5
+2022-03-15 17:49:29 DEBUG BasicTypeRegistry:157 - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@5db8ebc9
+2022-03-15 17:49:29 DEBUG BasicTypeRegistry:157 - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@6d0f0b77
+2022-03-15 17:49:29 DEBUG DefaultIdentifierGeneratorFactory:98 - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+2022-03-15 17:49:29 DEBUG DefaultIdentifierGeneratorFactory:98 - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+2022-03-15 17:49:29 DEBUG DefaultIdentifierGeneratorFactory:98 - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+2022-03-15 17:49:29 DEBUG DefaultIdentifierGeneratorFactory:98 - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+2022-03-15 17:49:29 DEBUG DefaultIdentifierGeneratorFactory:98 - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+2022-03-15 17:49:29 DEBUG DefaultIdentifierGeneratorFactory:98 - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+2022-03-15 17:49:29 DEBUG DefaultIdentifierGeneratorFactory:98 - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+2022-03-15 17:49:29 DEBUG DefaultIdentifierGeneratorFactory:98 - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2022-03-15 17:49:29 DEBUG DefaultIdentifierGeneratorFactory:98 - Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+2022-03-15 17:49:29 DEBUG DefaultIdentifierGeneratorFactory:98 - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+2022-03-15 17:49:29 DEBUG DefaultIdentifierGeneratorFactory:98 - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+2022-03-15 17:49:29 DEBUG DefaultIdentifierGeneratorFactory:98 - Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+2022-03-15 17:49:29 DEBUG DefaultIdentifierGeneratorFactory:98 - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2022-03-15 17:49:29 DEBUG DefaultIdentifierGeneratorFactory:98 - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+2022-03-15 17:49:30 WARN  pooling:72 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2022-03-15 17:49:30 INFO  pooling:115 - HHH10001005: using driver [com.microsoft.sqlserver.jdbc.SQLServerDriver] at URL [jdbc:sqlserver://revaturevo.database.windows.net:1433;database=ProjectOneDB;user=phillip013@revaturevo;password={your_password_here};encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;]
+2022-03-15 17:49:30 INFO  pooling:121 - HHH10001001: Connection properties: {password=Pacman1991!, user=phillip013}
+2022-03-15 17:49:30 INFO  pooling:129 - HHH10001003: Autocommit mode: false
+2022-03-15 17:49:30 DEBUG DriverManagerConnectionProviderImpl:384 - Initializing Connection pool with 1 Connections
+2022-03-15 17:49:30 INFO  DriverManagerConnectionProviderImpl:274 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2022-03-15 17:49:35 DEBUG JdbcEnvironmentInitiator:72 - Database ->
+       name : Microsoft SQL Server
+    version : 12.00.2327
+      major : 12
+      minor : 0
+2022-03-15 17:49:35 DEBUG JdbcEnvironmentInitiator:83 - Driver ->
+       name : Microsoft JDBC Driver 10.2 for SQL Server
+    version : 10.2.0.0
+      major : 10
+      minor : 2
+2022-03-15 17:49:35 DEBUG JdbcEnvironmentInitiator:389 - JDBC version : 4.3
+2022-03-15 17:49:35 INFO  Dialect:175 - HHH000400: Using dialect: org.hibernate.dialect.SQLServerDialect
+2022-03-15 17:49:36 DEBUG IdentifierHelperBuilder:197 - IdentifierCaseStrategy for both quoted and unquoted identifiers was set to the same strategy [MIXED]; that will likely lead to problems in schema update and validation if using quoted identifiers
+2022-03-15 17:49:37 DEBUG TypeConfiguration$Scope:149 - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@5bbb402d] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@38728fdd]
+2022-03-15 17:49:38 DEBUG Namespace:51 - Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+2022-03-15 17:49:38 DEBUG AnnotationBinder:546 - Binding entity from annotated class: com.revature.model.User
+2022-03-15 17:49:38 DEBUG Ejb3Column:227 - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+2022-03-15 17:49:38 DEBUG EntityBinder:431 - Import with entity name User
+2022-03-15 17:49:39 DEBUG EntityBinder:874 - Bind entity com.revature.model.User on table users
+2022-03-15 17:49:39 DEBUG Ejb3Column:227 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(users), mappingColumn=user_id, insertable=true, updatable=true, unique=false}
+2022-03-15 17:49:39 DEBUG ClassLoaderAccessImpl:60 - Not known whether passed class name [com.revature.model.User] is safe
+2022-03-15 17:49:39 DEBUG ClassLoaderAccessImpl:62 - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.revature.model.User
+2022-03-15 17:49:39 DEBUG PropertyBinder:175 - MetadataSourceProcessor property userId with lazy=false
+2022-03-15 17:49:39 DEBUG AbstractPropertyHolder:94 - Attempting to locate auto-apply AttributeConverter for property [com.revature.model.User:userId]
+2022-03-15 17:49:39 DEBUG SimpleValueBinder:410 - building SimpleValue for userId
+2022-03-15 17:49:39 DEBUG PropertyBinder:266 - Building property userId
+2022-03-15 17:49:39 DEBUG BinderHelper:514 - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(user_id)]), userId, identity, , ...)
+2022-03-15 17:49:39 DEBUG Ejb3Column:227 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(users), mappingColumn=email, insertable=true, updatable=true, unique=false}
+2022-03-15 17:49:39 DEBUG PropertyBinder:175 - MetadataSourceProcessor property email with lazy=false
+2022-03-15 17:49:39 DEBUG AbstractPropertyHolder:94 - Attempting to locate auto-apply AttributeConverter for property [com.revature.model.User:email]
+2022-03-15 17:49:39 DEBUG SimpleValueBinder:410 - building SimpleValue for email
+2022-03-15 17:49:39 DEBUG PropertyBinder:266 - Building property email
+2022-03-15 17:49:39 DEBUG Ejb3Column:227 - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='user'}
+2022-03-15 17:49:39 DEBUG Ejb3Column:227 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(users), mappingColumn=gundams, insertable=true, updatable=true, unique=false}
+2022-03-15 17:49:39 DEBUG Ejb3Column:227 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(users), mappingColumn=null, insertable=true, updatable=true, unique=false}
+2022-03-15 17:49:40 DEBUG Ejb3Column:227 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(users), mappingColumn=element, insertable=true, updatable=true, unique=false}
+2022-03-15 17:49:40 DEBUG Ejb3Column:227 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(users), mappingColumn=gundams_KEY, insertable=true, updatable=true, unique=false}
+2022-03-15 17:49:40 DEBUG Ejb3Column:227 - Binding column: Ejb3JoinColumn{logicalColumnName='gundams_KEY', referencedColumn='null', mappedBy='null'}
+2022-03-15 17:49:40 DEBUG Ejb3Column:227 - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='user'}
+2022-03-15 17:49:40 DEBUG Ejb3Column:227 - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='user'}
+2022-03-15 17:49:40 DEBUG CollectionBinder:449 - Collection role: com.revature.model.User.gundams
+2022-03-15 17:49:40 DEBUG PropertyBinder:266 - Building property gundams
+2022-03-15 17:49:40 DEBUG Ejb3Column:227 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(users), mappingColumn=name, insertable=true, updatable=true, unique=false}
+2022-03-15 17:49:40 DEBUG PropertyBinder:175 - MetadataSourceProcessor property name with lazy=false
+2022-03-15 17:49:40 DEBUG AbstractPropertyHolder:94 - Attempting to locate auto-apply AttributeConverter for property [com.revature.model.User:name]
+2022-03-15 17:49:40 DEBUG SimpleValueBinder:410 - building SimpleValue for name
+2022-03-15 17:49:40 DEBUG PropertyBinder:266 - Building property name
+2022-03-15 17:49:40 DEBUG Ejb3Column:227 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(users), mappingColumn=password, insertable=true, updatable=true, unique=false}
+2022-03-15 17:49:40 DEBUG PropertyBinder:175 - MetadataSourceProcessor property password with lazy=false
+2022-03-15 17:49:40 DEBUG AbstractPropertyHolder:94 - Attempting to locate auto-apply AttributeConverter for property [com.revature.model.User:password]
+2022-03-15 17:49:40 DEBUG SimpleValueBinder:410 - building SimpleValue for password
+2022-03-15 17:49:40 DEBUG PropertyBinder:266 - Building property password
+2022-03-15 17:49:40 DEBUG Ejb3Column:227 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(users), mappingColumn=username, insertable=true, updatable=true, unique=false}
+2022-03-15 17:49:40 DEBUG PropertyBinder:175 - MetadataSourceProcessor property username with lazy=false
+2022-03-15 17:49:40 DEBUG AbstractPropertyHolder:94 - Attempting to locate auto-apply AttributeConverter for property [com.revature.model.User:username]
+2022-03-15 17:49:40 DEBUG SimpleValueBinder:410 - building SimpleValue for username
+2022-03-15 17:49:40 DEBUG PropertyBinder:266 - Building property username
+2022-03-15 17:49:40 DEBUG AnnotationBinder:546 - Binding entity from annotated class: com.revature.model.Gundam
+2022-03-15 17:49:40 DEBUG Ejb3Column:227 - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+2022-03-15 17:49:40 DEBUG EntityBinder:431 - Import with entity name Gundam
+2022-03-15 17:49:40 DEBUG EntityBinder:874 - Bind entity com.revature.model.Gundam on table gundams
+2022-03-15 17:49:40 DEBUG Ejb3Column:227 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(gundams), mappingColumn=gundam_id, insertable=true, updatable=true, unique=false}
+2022-03-15 17:49:40 DEBUG ClassLoaderAccessImpl:60 - Not known whether passed class name [com.revature.model.Gundam] is safe
+2022-03-15 17:49:40 DEBUG ClassLoaderAccessImpl:62 - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.revature.model.Gundam
+2022-03-15 17:49:40 DEBUG PropertyBinder:175 - MetadataSourceProcessor property gundamId with lazy=false
+2022-03-15 17:49:40 DEBUG AbstractPropertyHolder:94 - Attempting to locate auto-apply AttributeConverter for property [com.revature.model.Gundam:gundamId]
+2022-03-15 17:49:40 DEBUG SimpleValueBinder:410 - building SimpleValue for gundamId
+2022-03-15 17:49:40 DEBUG PropertyBinder:266 - Building property gundamId
+2022-03-15 17:49:40 DEBUG BinderHelper:514 - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(gundam_id)]), gundamId, identity, , ...)
+2022-03-15 17:49:40 DEBUG Ejb3Column:227 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(gundams), mappingColumn=model, insertable=true, updatable=true, unique=false}
+2022-03-15 17:49:40 DEBUG PropertyBinder:175 - MetadataSourceProcessor property model with lazy=false
+2022-03-15 17:49:40 DEBUG AbstractPropertyHolder:94 - Attempting to locate auto-apply AttributeConverter for property [com.revature.model.Gundam:model]
+2022-03-15 17:49:40 DEBUG SimpleValueBinder:410 - building SimpleValue for model
+2022-03-15 17:49:40 DEBUG PropertyBinder:266 - Building property model
+2022-03-15 17:49:40 DEBUG Ejb3Column:227 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(gundams), mappingColumn=name, insertable=true, updatable=true, unique=false}
+2022-03-15 17:49:40 DEBUG PropertyBinder:175 - MetadataSourceProcessor property name with lazy=false
+2022-03-15 17:49:40 DEBUG AbstractPropertyHolder:94 - Attempting to locate auto-apply AttributeConverter for property [com.revature.model.Gundam:name]
+2022-03-15 17:49:40 DEBUG SimpleValueBinder:410 - building SimpleValue for name
+2022-03-15 17:49:40 DEBUG PropertyBinder:266 - Building property name
+2022-03-15 17:49:40 DEBUG Ejb3Column:227 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(gundams), mappingColumn=pilot, insertable=true, updatable=true, unique=false}
+2022-03-15 17:49:40 DEBUG PropertyBinder:175 - MetadataSourceProcessor property pilot with lazy=false
+2022-03-15 17:49:40 DEBUG AbstractPropertyHolder:94 - Attempting to locate auto-apply AttributeConverter for property [com.revature.model.Gundam:pilot]
+2022-03-15 17:49:40 DEBUG SimpleValueBinder:410 - building SimpleValue for pilot
+2022-03-15 17:49:40 DEBUG PropertyBinder:266 - Building property pilot
+2022-03-15 17:49:40 DEBUG Ejb3Column:227 - Binding column: Ejb3JoinColumn{logicalColumnName='user_id', referencedColumn='', mappedBy=''}
+2022-03-15 17:49:40 DEBUG Ejb3Column:227 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(gundams), mappingColumn=user, insertable=true, updatable=true, unique=false}
+2022-03-15 17:49:40 DEBUG PropertyBinder:266 - Building property user
+2022-03-15 17:49:40 DEBUG SimpleValueBinder:455 - Starting fillSimpleValue for userId
+2022-03-15 17:49:40 DEBUG SimpleValueBinder:455 - Starting fillSimpleValue for email
+2022-03-15 17:49:40 DEBUG SimpleValueBinder:455 - Starting fillSimpleValue for name
+2022-03-15 17:49:40 DEBUG SimpleValueBinder:455 - Starting fillSimpleValue for password
+2022-03-15 17:49:40 DEBUG SimpleValueBinder:455 - Starting fillSimpleValue for username
+2022-03-15 17:49:40 DEBUG SimpleValueBinder:455 - Starting fillSimpleValue for gundamId
+2022-03-15 17:49:40 DEBUG SimpleValueBinder:455 - Starting fillSimpleValue for model
+2022-03-15 17:49:40 DEBUG SimpleValueBinder:455 - Starting fillSimpleValue for name
+2022-03-15 17:49:40 DEBUG SimpleValueBinder:455 - Starting fillSimpleValue for pilot
+2022-03-15 17:49:40 DEBUG PrimaryKey:36 - Forcing column [user_id] to be non-null as it is part of the primary key for table [users]
+2022-03-15 17:49:40 DEBUG PrimaryKey:36 - Forcing column [gundam_id] to be non-null as it is part of the primary key for table [gundams]
+2022-03-15 17:49:40 DEBUG CollectionSecondPass:50 - Second pass for collection: com.revature.model.User.gundams
+2022-03-15 17:49:40 DEBUG CollectionBinder:903 - Binding a OneToMany: com.revature.model.User.gundams through a foreign key
+2022-03-15 17:49:40 DEBUG CollectionBinder:941 - Mapping collection: com.revature.model.User.gundams -> gundams
+2022-03-15 17:49:40 DEBUG TableBinder:554 - Retrieving property com.revature.model.Gundam.user
+2022-03-15 17:49:40 DEBUG CollectionSecondPass:67 - Mapped collection key: user_id, one-to-many: com.revature.model.Gundam
+2022-03-15 17:49:40 DEBUG InFlightMetadataCollectorImpl:1796 - Resolving reference to class: com.revature.model.User
+2022-03-15 17:49:40 DEBUG InFlightMetadataCollectorImpl:1796 - Resolving reference to class: com.revature.model.User
+2022-03-15 17:49:41 DEBUG SessionFactoryImpl:208 - Building session factory
+2022-03-15 17:49:41 DEBUG Settings:68 - SessionFactory name : null
+2022-03-15 17:49:41 DEBUG Settings:69 - Automatic flush during beforeCompletion(): enabled
+2022-03-15 17:49:41 DEBUG Settings:70 - Automatic session close at end of transaction: disabled
+2022-03-15 17:49:41 DEBUG Settings:72 - Statistics: disabled
+2022-03-15 17:49:41 DEBUG Settings:74 - Deleted entity synthetic identifier rollback: disabled
+2022-03-15 17:49:41 DEBUG Settings:75 - Default entity-mode: pojo
+2022-03-15 17:49:41 DEBUG Settings:76 - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+2022-03-15 17:49:41 DEBUG Settings:77 - Allow initialization of lazy state outside session : disabled
+2022-03-15 17:49:41 DEBUG Settings:79 - Using BatchFetchStyle : LEGACY
+2022-03-15 17:49:41 DEBUG Settings:80 - Default batch fetch size: -1
+2022-03-15 17:49:41 DEBUG Settings:81 - Maximum outer join fetch depth: null
+2022-03-15 17:49:41 DEBUG Settings:82 - Default null ordering: NONE
+2022-03-15 17:49:41 DEBUG Settings:83 - Order SQL updates by primary key: disabled
+2022-03-15 17:49:41 DEBUG Settings:84 - Order SQL inserts for batching: disabled
+2022-03-15 17:49:41 DEBUG Settings:86 - multi-tenancy strategy : NONE
+2022-03-15 17:49:41 DEBUG Settings:88 - JTA Track by Thread: enabled
+2022-03-15 17:49:41 DEBUG Settings:90 - Query language substitutions: {}
+2022-03-15 17:49:41 DEBUG Settings:91 - Named query checking : enabled
+2022-03-15 17:49:41 DEBUG Settings:93 - Second-level cache: disabled
+2022-03-15 17:49:41 DEBUG Settings:94 - Second-level query cache: disabled
+2022-03-15 17:49:41 DEBUG Settings:95 - Second-level query cache factory: null
+2022-03-15 17:49:41 DEBUG Settings:96 - Second-level cache region prefix: null
+2022-03-15 17:49:41 DEBUG Settings:97 - Optimize second-level cache for minimal puts: disabled
+2022-03-15 17:49:41 DEBUG Settings:98 - Structured second-level cache entries: disabled
+2022-03-15 17:49:41 DEBUG Settings:99 - Second-level cache direct-reference entries: disabled
+2022-03-15 17:49:41 DEBUG Settings:100 - Automatic eviction of collection cache: disabled
+2022-03-15 17:49:41 DEBUG Settings:102 - JDBC batch size: 0
+2022-03-15 17:49:41 DEBUG Settings:103 - JDBC batch updates for versioned data: enabled
+2022-03-15 17:49:41 DEBUG Settings:104 - Scrollable result sets: enabled
+2022-03-15 17:49:41 DEBUG Settings:105 - Wrap result sets: disabled
+2022-03-15 17:49:41 DEBUG Settings:106 - JDBC3 getGeneratedKeys(): enabled
+2022-03-15 17:49:41 DEBUG Settings:107 - JDBC result set fetch size: null
+2022-03-15 17:49:41 DEBUG Settings:108 - Connection release mode: AFTER_TRANSACTION
+2022-03-15 17:49:41 DEBUG Settings:109 - Generate SQL with comments: disabled
+2022-03-15 17:49:41 DEBUG Settings:111 - JPA compliance - query : disabled
+2022-03-15 17:49:41 DEBUG Settings:112 - JPA compliance - closed-handling : disabled
+2022-03-15 17:49:41 DEBUG Settings:113 - JPA compliance - lists : disabled
+2022-03-15 17:49:41 DEBUG Settings:114 - JPA compliance - transactions : disabled
+2022-03-15 17:49:42 DEBUG SessionFactoryServiceRegistryImpl:92 - EventListenerRegistry access via ServiceRegistry is deprecated.  Use `sessionFactory.getEventEngine().getListenerRegistry()` instead
+2022-03-15 17:49:42 DEBUG SessionFactoryServiceRegistryImpl:92 - EventListenerRegistry access via ServiceRegistry is deprecated.  Use `sessionFactory.getEventEngine().getListenerRegistry()` instead
+2022-03-15 17:49:42 DEBUG SessionFactoryImpl:276 - Session factory constructed with filter configurations : {}
+2022-03-15 17:49:42 DEBUG SessionFactoryImpl:277 - Instantiating session factory with properties: {java.specification.version=17, sun.cpu.isalist=amd64, sun.jnu.encoding=Cp1252, hibernate.dialect=org.hibernate.dialect.SQLServerDialect, java.class.path=C:\Program Files\apache-tomcat-9.0.58\bin\bootstrap.jar;C:\Program Files\apache-tomcat-9.0.58\bin\commons-daemon.jar;C:\Program Files\apache-tomcat-9.0.58\bin\tomcat-juli.jar;C:\Program Files\apache-tomcat-9.0.58\lib\annotations-api.jar;C:\Program Files\apache-tomcat-9.0.58\lib\catalina-ant.jar;C:\Program Files\apache-tomcat-9.0.58\lib\catalina-ha.jar;C:\Program Files\apache-tomcat-9.0.58\lib\catalina-ssi.jar;C:\Program Files\apache-tomcat-9.0.58\lib\catalina-storeconfig.jar;C:\Program Files\apache-tomcat-9.0.58\lib\catalina-tribes.jar;C:\Program Files\apache-tomcat-9.0.58\lib\catalina.jar;C:\Program Files\apache-tomcat-9.0.58\lib\ecj-4.20.jar;C:\Program Files\apache-tomcat-9.0.58\lib\el-api.jar;C:\Program Files\apache-tomcat-9.0.58\lib\jasper-el.jar;C:\Program Files\apache-tomcat-9.0.58\lib\jasper.jar;C:\Program Files\apache-tomcat-9.0.58\lib\jaspic-api.jar;C:\Program Files\apache-tomcat-9.0.58\lib\jsp-api.jar;C:\Program Files\apache-tomcat-9.0.58\lib\mssql-jdbc-10.2.0.jre17.jar;C:\Program Files\apache-tomcat-9.0.58\lib\servlet-api.jar;C:\Program Files\apache-tomcat-9.0.58\lib\tomcat-api.jar;C:\Program Files\apache-tomcat-9.0.58\lib\tomcat-coyote.jar;C:\Program Files\apache-tomcat-9.0.58\lib\tomcat-dbcp.jar;C:\Program Files\apache-tomcat-9.0.58\lib\tomcat-i18n-cs.jar;C:\Program Files\apache-tomcat-9.0.58\lib\tomcat-i18n-de.jar;C:\Program Files\apache-tomcat-9.0.58\lib\tomcat-i18n-es.jar;C:\Program Files\apache-tomcat-9.0.58\lib\tomcat-i18n-fr.jar;C:\Program Files\apache-tomcat-9.0.58\lib\tomcat-i18n-ja.jar;C:\Program Files\apache-tomcat-9.0.58\lib\tomcat-i18n-ko.jar;C:\Program Files\apache-tomcat-9.0.58\lib\tomcat-i18n-pt-BR.jar;C:\Program Files\apache-tomcat-9.0.58\lib\tomcat-i18n-ru.jar;C:\Program Files\apache-tomcat-9.0.58\lib\tomcat-i18n-zh-CN.jar;C:\Program Files\apache-tomcat-9.0.58\lib\tomcat-jdbc.jar;C:\Program Files\apache-tomcat-9.0.58\lib\tomcat-jni.jar;C:\Program Files\apache-tomcat-9.0.58\lib\tomcat-util-scan.jar;C:\Program Files\apache-tomcat-9.0.58\lib\tomcat-util.jar;C:\Program Files\apache-tomcat-9.0.58\lib\tomcat-websocket.jar;C:\Program Files\apache-tomcat-9.0.58\lib\websocket-api.jar, java.vm.vendor=Oracle Corporation, sun.arch.data.model=64, user.variant=, java.vendor.url=https://java.oracle.com/, catalina.useNaming=true, user.timezone=America/Chicago, java.vm.specification.version=17, os.name=Windows 10, sun.java.launcher=SUN_STANDARD, user.country=US, sun.boot.library.path=C:\Users\Sequoia\.jdks\openjdk-17.0.2\bin, sun.java.command=org.apache.catalina.startup.Bootstrap start, jdk.debug=release, sun.cpu.endian=little, user.home=C:\Users\Sequoia, user.language=en, java.specification.vendor=Oracle Corporation, java.naming.factory.url.pkgs=org.apache.naming, java.version.date=2022-01-18, java.home=C:\Users\Sequoia\.jdks\openjdk-17.0.2, file.separator=\, java.vm.compressedOopsMode=32-bit, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, java.specification.name=Java Platform API Specification, package.access=sun.,org.apache.catalina.,org.apache.coyote.,org.apache.jasper.,org.apache.tomcat., package.definition=sun.,java.,org.apache.catalina.,org.apache.coyote.,org.apache.jasper.,org.apache.naming.,org.apache.tomcat., hibernate.hbm2ddl.auto=update, user.script=, server.loader=, java.util.logging.config.file=C:\Users\Sequoia\.SmartTomcat\ProjectOne\ProjectOne\conf\logging.properties, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, java.runtime.version=17.0.2+8-86, java.naming.factory.initial=org.apache.naming.java.javaURLContextFactory, user.name=Sequoia, path.separator=;, hibernate.connection.username=****, common.loader="C:\Users\Sequoia\.SmartTomcat\ProjectOne\ProjectOne/lib","C:\Users\Sequoia\.SmartTomcat\ProjectOne\ProjectOne/lib/*.jar","C:\Users\Sequoia\.SmartTomcat\ProjectOne\ProjectOne/lib","C:\Users\Sequoia\.SmartTomcat\ProjectOne\ProjectOne/lib/*.jar", os.version=10.0, java.runtime.name=OpenJDK Runtime Environment, hibernate.connection.url=jdbc:sqlserver://revaturevo.database.windows.net:1433;database=ProjectOneDB;user=phillip013@revaturevo;password={your_password_here};encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;, file.encoding=UTF-8, hibernate.show_sql=true, java.vm.name=OpenJDK 64-Bit Server VM, hibernate.connection.driver_class=com.microsoft.sqlserver.jdbc.SQLServerDriver, java.vendor.url.bug=https://bugreport.java.com/bugreport/, java.io.tmpdir=C:\Users\Sequoia\AppData\Local\Temp\, tomcat.util.scan.StandardJarScanFilter.jarsToScan=log4j-taglib*.jar,log4j-web*.jar,log4javascript*.jar,slf4j-taglib*.jar, catalina.home=C:\Users\Sequoia\.SmartTomcat\ProjectOne\ProjectOne, java.version=17.0.2, tomcat.util.scan.StandardJarScanFilter.jarsToSkip=annotations-api.jar,ant-junit*.jar,ant-launcher.jar,ant.jar,asm-*.jar,aspectj*.jar,bootstrap.jar,catalina-ant.jar,catalina-ha.jar,catalina-ssi.jar,catalina-storeconfig.jar,catalina-tribes.jar,catalina.jar,cglib-*.jar,cobertura-*.jar,commons-beanutils*.jar,commons-codec*.jar,commons-collections*.jar,commons-daemon.jar,commons-dbcp*.jar,commons-digester*.jar,commons-fileupload*.jar,commons-httpclient*.jar,commons-io*.jar,commons-lang*.jar,commons-logging*.jar,commons-math*.jar,commons-pool*.jar,derby-*.jar,dom4j-*.jar,easymock-*.jar,ecj-*.jar,el-api.jar,geronimo-spec-jaxrpc*.jar,h2*.jar,hamcrest-*.jar,hibernate*.jar,httpclient*.jar,icu4j-*.jar,jasper-el.jar,jasper.jar,jaspic-api.jar,jaxb-*.jar,jaxen-*.jar,jdom-*.jar,jetty-*.jar,jmx-tools.jar,jmx.jar,jsp-api.jar,jstl.jar,jta*.jar,junit-*.jar,junit.jar,log4j*.jar,mail*.jar,objenesis-*.jar,oraclepki.jar,oro-*.jar,servlet-api-*.jar,servlet-api.jar,slf4j*.jar,taglibs-standard-spec-*.jar,tagsoup-*.jar,tomcat-api.jar,tomcat-coyote.jar,tomcat-dbcp.jar,tomcat-i18n-*.jar,tomcat-jdbc.jar,tomcat-jni.jar,tomcat-juli-adapters.jar,tomcat-juli.jar,tomcat-util-scan.jar,tomcat-util.jar,tomcat-websocket.jar,tools.jar,websocket-api.jar,wsdl4j*.jar,xercesImpl.jar,xml-apis.jar,xmlParserAPIs-*.jar,xmlParserAPIs.jar,xom-*.jar, user.dir=C:\Users\Sequoia\.SmartTomcat\ProjectOne\ProjectOne, os.arch=amd64, java.vm.specification.name=Java Virtual Machine Specification, hibernate.connection.password=****, sun.os.patch.level=, catalina.base=C:\Users\Sequoia\.SmartTomcat\ProjectOne\ProjectOne, shared.loader=, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.cfgxml.spi.LoadedConfig@77784d72, native.encoding=Cp1252, java.util.logging.manager=org.apache.juli.ClassLoaderLogManager, java.library.path=C:\Users\Sequoia\.jdks\openjdk-17.0.2\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;c:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64_win\compiler;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk1.8.0_321\bin;C:\Program Files\nodejs\;C:\Program Files\apache-maven-3.8.4\bin;;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64_win\compiler;C:\Users\Sequoia\AppData\Local\Microsoft\WindowsApps;;C:\Users\Sequoia\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Sequoia\AppData\Roaming\npm;., java.vendor=Oracle Corporation, java.vm.info=mixed mode, sharing, java.vm.version=17.0.2+8-86, hibernate.bytecode.use_reflection_optimizer=false, sun.io.unicode.encoding=UnicodeLittle, tomcat.util.buf.StringCache.byte.enabled=true, java.class.version=61.0}
+2022-03-15 17:49:43 DEBUG JaccIntegrator:84 - Skipping JACC integration as it was not enabled
+2022-03-15 17:49:43 DEBUG SessionFactoryImpl:316 - Instantiated session factory
+2022-03-15 17:49:43 DEBUG TypeConfiguration$Scope:154 - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@5bbb402d] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@260e32e8]
+2022-03-15 17:49:44 DEBUG interceptor:46 - To-one property `com.revature.model.Gundam#user` was mapped with LAZY + NO_PROXY but the class was not enhanced
+2022-03-15 17:49:44 DEBUG interceptor:46 - To-one property `com.revature.model.Gundam#user` was mapped with LAZY + NO_PROXY but the class was not enhanced
+2022-03-15 17:49:44 DEBUG ClassLoaderAccessImpl:60 - Not known whether passed class name [com.revature.model.Gundam] is safe
+2022-03-15 17:49:44 DEBUG ClassLoaderAccessImpl:62 - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.revature.model.Gundam
+2022-03-15 17:49:47 DEBUG interceptor:46 - To-one property `com.revature.model.Gundam#user` was mapped with LAZY + NO_PROXY but the class was not enhanced
+2022-03-15 17:49:47 DEBUG interceptor:46 - To-one property `com.revature.model.Gundam#user` was mapped with LAZY + NO_PROXY but the class was not enhanced
+2022-03-15 17:49:47 DEBUG ClassLoaderAccessImpl:60 - Not known whether passed class name [com.revature.model.User] is safe
+2022-03-15 17:49:47 DEBUG ClassLoaderAccessImpl:62 - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.revature.model.User
+2022-03-15 17:49:47 DEBUG AbstractCollectionPersister:687 - Static SQL for collection: com.revature.model.User.gundams
+2022-03-15 17:49:47 DEBUG AbstractCollectionPersister:689 -  Row insert: update gundams set user_id=? where gundam_id=?
+2022-03-15 17:49:47 DEBUG AbstractCollectionPersister:692 -  Row update: update gundams set  where gundam_id=?
+2022-03-15 17:49:47 DEBUG AbstractCollectionPersister:695 -  Row delete: update gundams set user_id=null where user_id=? and gundam_id=?
+2022-03-15 17:49:47 DEBUG AbstractCollectionPersister:698 -  One-shot delete: update gundams set user_id=null where user_id=?
+2022-03-15 17:49:47 DEBUG AbstractEntityPersister:4002 - Static SQL for entity: com.revature.model.Gundam
+2022-03-15 17:49:47 DEBUG AbstractEntityPersister:4007 -  Version select: select gundam_id from gundams where gundam_id =?
+2022-03-15 17:49:47 DEBUG AbstractEntityPersister:4010 -  Snapshot select: select gundam_.gundam_id, gundam_.model as model2_0_, gundam_.name as name3_0_, gundam_.pilot as pilot4_0_, gundam_.user_id as user_id5_0_ from gundams gundam_ where gundam_.gundam_id=?
+2022-03-15 17:49:47 DEBUG AbstractEntityPersister:394 -  Insert 0: insert into gundams (model, name, pilot, user_id, gundam_id) values (?, ?, ?, ?, ?)
+2022-03-15 17:49:47 DEBUG AbstractEntityPersister:394 -  Update 0: update gundams set model=?, name=?, pilot=?, user_id=? where gundam_id=?
+2022-03-15 17:49:47 DEBUG AbstractEntityPersister:394 -  Delete 0: delete from gundams where gundam_id=?
+2022-03-15 17:49:47 DEBUG AbstractEntityPersister:4018 -  Identity insert: insert into gundams (model, name, pilot, user_id) values (?, ?, ?, ?)
+2022-03-15 17:49:48 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@2926afee]
+2022-03-15 17:49:48 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : model
+2022-03-15 17:49:48 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : name
+2022-03-15 17:49:48 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : pilot
+2022-03-15 17:49:48 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : user
+2022-03-15 17:49:48 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@409be353]
+2022-03-15 17:49:48 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : user.email
+2022-03-15 17:49:48 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : user.gundams
+2022-03-15 17:49:48 DEBUG MetamodelGraphWalker:154 - Property path deemed to be circular : user.gundams
+2022-03-15 17:49:48 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : user.name
+2022-03-15 17:49:48 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : user.password
+2022-03-15 17:49:48 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : user.username
+2022-03-15 17:49:48 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:160 - Building LoadPlan...
+2022-03-15 17:49:49 DEBUG LoadQueryJoinAndFetchProcessor:102 - processing queryspace <gen:0>
+2022-03-15 17:49:49 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=com.revature.model.Gundam)
+    - Returns
+       - EntityReturnImpl(entity=com.revature.model.Gundam, querySpaceUid=<gen:0>, path=com.revature.model.Gundam)
+          - EntityAttributeFetchImpl(entity=com.revature.model.User, querySpaceUid=<gen:1>, path=com.revature.model.Gundam.user)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.revature.model.Gundam)
+          - SQL table alias mapping - gundam0_
+          - alias suffix - 0_
+          - suffixed key columns - {gundam_i1_0_0_}
+          - JOIN (JoinDefinedByMetadata(user)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=com.revature.model.User)
+                - SQL table alias mapping - user1_
+                - alias suffix - 1_
+                - suffixed key columns - {user_id1_1_1_}
+
+2022-03-15 17:49:49 DEBUG EntityLoader:129 - Static select for entity com.revature.model.Gundam [NONE]: select gundam0_.gundam_id as gundam_i1_0_0_, gundam0_.model as model2_0_0_, gundam0_.name as name3_0_0_, gundam0_.pilot as pilot4_0_0_, gundam0_.user_id as user_id5_0_0_, user1_.user_id as user_id1_1_1_, user1_.email as email2_1_1_, user1_.name as name3_1_1_, user1_.password as password4_1_1_, user1_.username as username5_1_1_ from gundams gundam0_ inner join users user1_ on gundam0_.user_id=user1_.user_id where gundam0_.gundam_id=?
+2022-03-15 17:49:49 DEBUG AbstractEntityPersister:4002 - Static SQL for entity: com.revature.model.User
+2022-03-15 17:49:49 DEBUG AbstractEntityPersister:4007 -  Version select: select user_id from users where user_id =?
+2022-03-15 17:49:49 DEBUG AbstractEntityPersister:4010 -  Snapshot select: select user_.user_id, user_.email as email2_1_, user_.name as name3_1_, user_.password as password4_1_, user_.username as username5_1_ from users user_ where user_.user_id=?
+2022-03-15 17:49:49 DEBUG AbstractEntityPersister:394 -  Insert 0: insert into users (email, name, password, username, user_id) values (?, ?, ?, ?, ?)
+2022-03-15 17:49:49 DEBUG AbstractEntityPersister:394 -  Update 0: update users set email=?, name=?, password=?, username=? where user_id=?
+2022-03-15 17:49:49 DEBUG AbstractEntityPersister:394 -  Delete 0: delete from users where user_id=?
+2022-03-15 17:49:49 DEBUG AbstractEntityPersister:4018 -  Identity insert: insert into users (email, name, password, username) values (?, ?, ?, ?)
+2022-03-15 17:49:49 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@4e2d508]
+2022-03-15 17:49:49 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : email
+2022-03-15 17:49:49 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : gundams
+2022-03-15 17:49:49 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@2c9af249]
+2022-03-15 17:49:49 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1bbc047c]
+2022-03-15 17:49:49 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : name
+2022-03-15 17:49:49 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : password
+2022-03-15 17:49:49 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : username
+2022-03-15 17:49:49 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:160 - Building LoadPlan...
+2022-03-15 17:49:49 DEBUG LoadQueryJoinAndFetchProcessor:102 - processing queryspace <gen:0>
+2022-03-15 17:49:49 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=com.revature.model.User)
+    - Returns
+       - EntityReturnImpl(entity=com.revature.model.User, querySpaceUid=<gen:0>, path=com.revature.model.User)
+          - CollectionAttributeFetchImpl(collection=com.revature.model.User.gundams, querySpaceUid=<gen:1>, path=com.revature.model.User.gundams)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=com.revature.model.Gundam, querySpaceUid=<gen:2>, path=com.revature.model.User.gundams.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.revature.model.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {user_id1_1_0_}
+
+2022-03-15 17:49:49 DEBUG EntityLoader:129 - Static select for entity com.revature.model.User [NONE]: select user0_.user_id as user_id1_1_0_, user0_.email as email2_1_0_, user0_.name as name3_1_0_, user0_.password as password4_1_0_, user0_.username as username5_1_0_ from users user0_ where user0_.user_id=?
+2022-03-15 17:49:49 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@251fedbf]
+2022-03-15 17:49:49 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@2247af3e]
+2022-03-15 17:49:49 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : model
+2022-03-15 17:49:49 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : name
+2022-03-15 17:49:49 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : pilot
+2022-03-15 17:49:49 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : user
+2022-03-15 17:49:49 DEBUG MetamodelGraphWalker:154 - Property path deemed to be circular : user
+2022-03-15 17:49:49 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:160 - Building LoadPlan...
+2022-03-15 17:49:49 DEBUG LoadQueryJoinAndFetchProcessor:102 - processing queryspace <gen:0>
+2022-03-15 17:49:49 DEBUG LoadPlanTreePrinter:55 - LoadPlan(collection=com.revature.model.User.gundams)
+    - Returns
+       - CollectionReturnImpl(collection=com.revature.model.User.gundams, querySpaceUid=<gen:0>, path=[com.revature.model.User.gundams])
+          - (collection element) CollectionFetchableElementEntityGraph(entity=com.revature.model.Gundam, querySpaceUid=<gen:1>, path=[com.revature.model.User.gundams].<elements>)
+    - QuerySpaces
+       - CollectionQuerySpaceImpl(uid=<gen:0>, collection=com.revature.model.User.gundams)
+          - SQL table alias mapping - gundams0_
+          - alias suffix - 0_
+          - suffixed key columns - {user_id5_0_0_}
+          - entity-element alias suffix - 1_
+          - 1_entity-element suffixed key columns - gundam_i1_0_1_
+          - JOIN (JoinDefinedByMetadata(elements)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=com.revature.model.Gundam)
+                - SQL table alias mapping - gundams0_
+                - alias suffix - 1_
+                - suffixed key columns - {gundam_i1_0_1_}
+
+2022-03-15 17:49:49 DEBUG CollectionLoader:83 - Static select for collection com.revature.model.User.gundams: select gundams0_.user_id as user_id5_0_0_, gundams0_.gundam_id as gundam_i1_0_0_, gundams0_.gundam_id as gundam_i1_0_1_, gundams0_.model as model2_0_1_, gundams0_.name as name3_0_1_, gundams0_.pilot as pilot4_0_1_, gundams0_.user_id as user_id5_0_1_ from gundams gundams0_ where gundams0_.user_id=?
+2022-03-15 17:49:50 INFO  access:48 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@19437c3d] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2022-03-15 17:49:51 DEBUG Table:497 - No alter strings for table : gundams
+2022-03-15 17:49:51 DEBUG Table:497 - No alter strings for table : users
+2022-03-15 17:49:52 DEBUG JtaPlatformInitiator:43 - No JtaPlatform was specified, checking resolver
+2022-03-15 17:49:52 DEBUG JtaPlatformResolverInitiator:33 - No JtaPlatformResolver was specified, using default [org.hibernate.engine.transaction.jta.platform.internal.StandardJtaPlatformResolver]
+2022-03-15 17:49:52 DEBUG StandardJtaPlatformResolver:137 - Could not resolve JtaPlatform, using default [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-03-15 17:49:52 INFO  JtaPlatformInitiator:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-03-15 17:49:52 DEBUG NamedQueryRepository:171 - Checking 0 named HQL queries
+2022-03-15 17:49:52 DEBUG NamedQueryRepository:185 - Checking 0 named SQL queries
+2022-03-15 17:49:52 DEBUG SessionFactoryServiceRegistryImpl:92 - EventListenerRegistry access via ServiceRegistry is deprecated.  Use `sessionFactory.getEventEngine().getListenerRegistry()` instead
+2022-03-15 17:49:52 DEBUG SessionFactoryRegistry:51 - Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@1ae8a756
+2022-03-15 17:49:52 DEBUG SessionFactoryRegistry:73 - Registering SessionFactory: 5296a1ec-9dcd-46ba-afc5-e1c06470ccea (<unnamed>)
+2022-03-15 17:49:52 DEBUG SessionFactoryRegistry:80 - Not binding SessionFactory to JNDI, no JNDI name configured
+2022-03-15 17:49:53 DEBUG StatisticsInitiator:101 - Statistics initialized [enabled=false]
+2022-03-15 17:49:54 DEBUG TransactionImpl:53 - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2022-03-15 17:49:54 DEBUG TransactionImpl:81 - begin
+2022-03-15 17:49:54 DEBUG QueryTranslatorFactoryInitiator:45 - QueryTranslatorFactory: org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory@26e139eb
+2022-03-15 17:49:54 DEBUG QueryTranslatorImpl:292 - parse() - HQL: FROM com.revature.model.User
+2022-03-15 17:49:54 DEBUG ErrorTracker:97 - throwQueryException() : no errors
+2022-03-15 17:49:55 DEBUG QueryTranslatorImpl:313 - --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    \-[SELECT_FROM] Node: 'SELECT_FROM'
+       \-[FROM] Node: 'FROM'
+          \-[RANGE] Node: 'RANGE'
+             \-[DOT] Node: '.'
+                +-[DOT] Node: '.'
+                |  +-[DOT] Node: '.'
+                |  |  +-[IDENT] Node: 'com'
+                |  |  \-[IDENT] Node: 'revature'
+                |  \-[IDENT] Node: 'model'
+                \-[IDENT] Node: 'User'
+
+2022-03-15 17:49:55 DEBUG HqlSqlBaseWalker:129 - select << begin [level=1, statement=select]
+2022-03-15 17:49:55 DEBUG FromElement:153 - FromClause{level=1} : com.revature.model.User (<no alias>) -> user0_
+2022-03-15 17:49:55 DEBUG HqlSqlBaseWalker:133 - select : finishing up [level=1, statement=select]
+2022-03-15 17:49:55 DEBUG HqlSqlWalker:762 - processQuery() :  ( SELECT ( FromClause{level=1} users user0_ ) )
+2022-03-15 17:49:55 DEBUG HqlSqlWalker:1038 - Derived SELECT clause created.
+2022-03-15 17:49:55 DEBUG JoinProcessor:129 - Tables referenced from query nodes:
+ \-QueryNode
+    +-SelectClause
+    | referencedTables(entity User): [users]
+    |  +-SelectExpressionImpl
+    |  | persister: SingleTableEntityPersister(com.revature.model.User)
+    |  \-SqlFragment
+    \-FromClause
+       \-FromElement
+
+2022-03-15 17:49:55 DEBUG JoinProcessor:304 - Using FROM fragment [users user0_]
+2022-03-15 17:49:55 DEBUG HqlSqlBaseWalker:137 - select >> end [level=1, statement=select]
+2022-03-15 17:49:55 DEBUG QueryTranslatorImpl:279 - --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (users)
+    +-[SELECT_CLAUSE] SelectClause: '{derived select clause}'
+    |  +-[SELECT_EXPR] SelectExpressionImpl: 'user0_.user_id as user_id1_1_' {FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=null,role=null,tableName=users,tableAlias=user0_,origin=null,columns={,className=com.revature.model.User}}}
+    |  \-[SQL_TOKEN] SqlFragment: 'user0_.email as email2_1_, user0_.name as name3_1_, user0_.password as password4_1_, user0_.username as username5_1_'
+    \-[FROM] FromClause: 'FROM' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[], fromElementByTableAlias=[user0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+       \-[FROM_FRAGMENT] FromElement: 'users user0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=null,role=null,tableName=users,tableAlias=user0_,origin=null,columns={,className=com.revature.model.User}}
+
+2022-03-15 17:49:55 DEBUG ErrorTracker:97 - throwQueryException() : no errors
+2022-03-15 17:49:55 DEBUG QueryTranslatorImpl:258 - HQL: FROM com.revature.model.User
+2022-03-15 17:49:55 DEBUG QueryTranslatorImpl:259 - SQL: select user0_.user_id as user_id1_1_, user0_.email as email2_1_, user0_.name as name3_1_, user0_.password as password4_1_, user0_.username as username5_1_ from users user0_
+2022-03-15 17:49:55 DEBUG ErrorTracker:97 - throwQueryException() : no errors
+2022-03-15 17:49:55 DEBUG SQL:144 - select user0_.user_id as user_id1_1_, user0_.email as email2_1_, user0_.name as name3_1_, user0_.password as password4_1_, user0_.username as username5_1_ from users user0_
+2022-03-15 17:49:56 DEBUG Loader:384 - Result set row: 0
+2022-03-15 17:49:56 DEBUG Loader:1595 - Result row: EntityKey[com.revature.model.User#1]
+2022-03-15 17:49:56 DEBUG Loader:384 - Result set row: 1
+2022-03-15 17:49:56 DEBUG Loader:1595 - Result row: EntityKey[com.revature.model.User#2]
+2022-03-15 17:49:56 DEBUG Loader:384 - Result set row: 2
+2022-03-15 17:49:56 DEBUG Loader:1595 - Result row: EntityKey[com.revature.model.User#3]
+2022-03-15 17:49:56 DEBUG Loader:384 - Result set row: 3
+2022-03-15 17:49:56 DEBUG Loader:1595 - Result row: EntityKey[com.revature.model.User#4]
+2022-03-15 17:49:56 DEBUG Loader:384 - Result set row: 4
+2022-03-15 17:49:56 DEBUG Loader:1595 - Result row: EntityKey[com.revature.model.User#5]
+2022-03-15 17:49:56 DEBUG Loader:384 - Result set row: 5
+2022-03-15 17:49:56 DEBUG Loader:1595 - Result row: EntityKey[com.revature.model.User#6]
+2022-03-15 17:49:56 DEBUG TwoPhaseLoad:171 - Resolving attributes for [com.revature.model.User#1]
+2022-03-15 17:49:56 DEBUG TwoPhaseLoad:184 - Processing attribute `email` : value = phil@email.com
+2022-03-15 17:49:56 DEBUG TwoPhaseLoad:215 - Attribute (`email`)  - enhanced for lazy-loading? - false
+2022-03-15 17:49:56 DEBUG TwoPhaseLoad:184 - Processing attribute `gundams` : value = NOT NULL COLLECTION
+2022-03-15 17:49:56 DEBUG TwoPhaseLoad:215 - Attribute (`gundams`)  - enhanced for lazy-loading? - false
+2022-03-15 17:49:56 DEBUG TwoPhaseLoad:184 - Processing attribute `name` : value = Phillip
+2022-03-15 17:49:56 DEBUG TwoPhaseLoad:215 - Attribute (`name`)  - enhanced for lazy-loading? - false
+2022-03-15 17:49:56 DEBUG TwoPhaseLoad:184 - Processing attribute `password` : value = hello1
+2022-03-15 17:49:56 DEBUG TwoPhaseLoad:215 - Attribute (`password`)  - enhanced for lazy-loading? - false
+2022-03-15 17:49:56 DEBUG TwoPhaseLoad:184 - Processing attribute `username` : value = philvo
+2022-03-15 17:49:56 DEBUG TwoPhaseLoad:215 - Attribute (`username`)  - enhanced for lazy-loading? - false
+2022-03-15 17:49:56 DEBUG TwoPhaseLoad:352 - Done materializing entity [com.revature.model.User#1]
+2022-03-15 17:49:56 DEBUG TwoPhaseLoad:171 - Resolving attributes for [com.revature.model.User#2]
+2022-03-15 17:49:56 DEBUG TwoPhaseLoad:184 - Processing attribute `email` : value = sequoia@email.com
+2022-03-15 17:49:56 DEBUG TwoPhaseLoad:215 - Attribute (`email`)  - enhanced for lazy-loading? - false
+2022-03-15 17:49:56 DEBUG TwoPhaseLoad:184 - Processing attribute `gundams` : value = NOT NULL COLLECTION
+2022-03-15 17:49:56 DEBUG TwoPhaseLoad:215 - Attribute (`gundams`)  - enhanced for lazy-loading? - false
+2022-03-15 17:49:56 DEBUG TwoPhaseLoad:184 - Processing attribute `name` : value = Sequoia
+2022-03-15 17:49:56 DEBUG TwoPhaseLoad:215 - Attribute (`name`)  - enhanced for lazy-loading? - false
+2022-03-15 17:49:56 DEBUG TwoPhaseLoad:184 - Processing attribute `password` : value = hello2
+2022-03-15 17:49:56 DEBUG TwoPhaseLoad:215 - Attribute (`password`)  - enhanced for lazy-loading? - false
+2022-03-15 17:49:56 DEBUG TwoPhaseLoad:184 - Processing attribute `username` : value = sequoiatree
+2022-03-15 17:49:56 DEBUG TwoPhaseLoad:215 - Attribute (`username`)  - enhanced for lazy-loading? - false
+2022-03-15 17:49:56 DEBUG TwoPhaseLoad:352 - Done materializing entity [com.revature.model.User#2]
+2022-03-15 17:49:56 DEBUG TwoPhaseLoad:171 - Resolving attributes for [com.revature.model.User#3]
+2022-03-15 17:49:56 DEBUG TwoPhaseLoad:184 - Processing attribute `email` : value = winston@email.com
+2022-03-15 17:49:56 DEBUG TwoPhaseLoad:215 - Attribute (`email`)  - enhanced for lazy-loading? - false
+2022-03-15 17:49:56 DEBUG TwoPhaseLoad:184 - Processing attribute `gundams` : value = NOT NULL COLLECTION
+2022-03-15 17:49:56 DEBUG TwoPhaseLoad:215 - Attribute (`gundams`)  - enhanced for lazy-loading? - false
+2022-03-15 17:49:56 DEBUG TwoPhaseLoad:184 - Processing attribute `name` : value = Winston
+2022-03-15 17:49:56 DEBUG TwoPhaseLoad:215 - Attribute (`name`)  - enhanced for lazy-loading? - false
+2022-03-15 17:49:56 DEBUG TwoPhaseLoad:184 - Processing attribute `password` : value = hello3
+2022-03-15 17:49:56 DEBUG TwoPhaseLoad:215 - Attribute (`password`)  - enhanced for lazy-loading? - false
+2022-03-15 17:49:56 DEBUG TwoPhaseLoad:184 - Processing attribute `username` : value = winston
+2022-03-15 17:49:56 DEBUG TwoPhaseLoad:215 - Attribute (`username`)  - enhanced for lazy-loading? - false
+2022-03-15 17:49:56 DEBUG TwoPhaseLoad:352 - Done materializing entity [com.revature.model.User#3]
+2022-03-15 17:49:56 DEBUG TwoPhaseLoad:171 - Resolving attributes for [com.revature.model.User#4]
+2022-03-15 17:49:56 DEBUG TwoPhaseLoad:184 - Processing attribute `email` : value = bruno@email.com
+2022-03-15 17:49:56 DEBUG TwoPhaseLoad:215 - Attribute (`email`)  - enhanced for lazy-loading? - false
+2022-03-15 17:49:56 DEBUG TwoPhaseLoad:184 - Processing attribute `gundams` : value = NOT NULL COLLECTION
+2022-03-15 17:49:56 DEBUG TwoPhaseLoad:215 - Attribute (`gundams`)  - enhanced for lazy-loading? - false
+2022-03-15 17:49:56 DEBUG TwoPhaseLoad:184 - Processing attribute `name` : value = Bruno
+2022-03-15 17:49:56 DEBUG TwoPhaseLoad:215 - Attribute (`name`)  - enhanced for lazy-loading? - false
+2022-03-15 17:49:56 DEBUG TwoPhaseLoad:184 - Processing attribute `password` : value = hello4
+2022-03-15 17:49:56 DEBUG TwoPhaseLoad:215 - Attribute (`password`)  - enhanced for lazy-loading? - false
+2022-03-15 17:49:56 DEBUG TwoPhaseLoad:184 - Processing attribute `username` : value = perroloco
+2022-03-15 17:49:56 DEBUG TwoPhaseLoad:215 - Attribute (`username`)  - enhanced for lazy-loading? - false
+2022-03-15 17:49:56 DEBUG TwoPhaseLoad:352 - Done materializing entity [com.revature.model.User#4]
+2022-03-15 17:49:56 DEBUG TwoPhaseLoad:171 - Resolving attributes for [com.revature.model.User#5]
+2022-03-15 17:49:56 DEBUG TwoPhaseLoad:184 - Processing attribute `email` : value = ollie@email.com
+2022-03-15 17:49:56 DEBUG TwoPhaseLoad:215 - Attribute (`email`)  - enhanced for lazy-loading? - false
+2022-03-15 17:49:56 DEBUG TwoPhaseLoad:184 - Processing attribute `gundams` : value = NOT NULL COLLECTION
+2022-03-15 17:49:56 DEBUG TwoPhaseLoad:215 - Attribute (`gundams`)  - enhanced for lazy-loading? - false
+2022-03-15 17:49:56 DEBUG TwoPhaseLoad:184 - Processing attribute `name` : value = Oliver
+2022-03-15 17:49:56 DEBUG TwoPhaseLoad:215 - Attribute (`name`)  - enhanced for lazy-loading? - false
+2022-03-15 17:49:56 DEBUG TwoPhaseLoad:184 - Processing attribute `password` : value = hello5
+2022-03-15 17:49:56 DEBUG TwoPhaseLoad:215 - Attribute (`password`)  - enhanced for lazy-loading? - false
+2022-03-15 17:49:56 DEBUG TwoPhaseLoad:184 - Processing attribute `username` : value = ollie
+2022-03-15 17:49:56 DEBUG TwoPhaseLoad:215 - Attribute (`username`)  - enhanced for lazy-loading? - false
+2022-03-15 17:49:56 DEBUG TwoPhaseLoad:352 - Done materializing entity [com.revature.model.User#5]
+2022-03-15 17:49:56 DEBUG TwoPhaseLoad:171 - Resolving attributes for [com.revature.model.User#6]
+2022-03-15 17:49:56 DEBUG TwoPhaseLoad:184 - Processing attribute `email` : value = kawhi@email.com
+2022-03-15 17:49:56 DEBUG TwoPhaseLoad:215 - Attribute (`email`)  - enhanced for lazy-loading? - false
+2022-03-15 17:49:56 DEBUG TwoPhaseLoad:184 - Processing attribute `gundams` : value = NOT NULL COLLECTION
+2022-03-15 17:49:56 DEBUG TwoPhaseLoad:215 - Attribute (`gundams`)  - enhanced for lazy-loading? - false
+2022-03-15 17:49:56 DEBUG TwoPhaseLoad:184 - Processing attribute `name` : value = Kawhi
+2022-03-15 17:49:56 DEBUG TwoPhaseLoad:215 - Attribute (`name`)  - enhanced for lazy-loading? - false
+2022-03-15 17:49:56 DEBUG TwoPhaseLoad:184 - Processing attribute `password` : value = hello1
+2022-03-15 17:49:56 DEBUG TwoPhaseLoad:215 - Attribute (`password`)  - enhanced for lazy-loading? - false
+2022-03-15 17:49:56 DEBUG TwoPhaseLoad:184 - Processing attribute `username` : value = theclaw
+2022-03-15 17:49:56 DEBUG TwoPhaseLoad:215 - Attribute (`username`)  - enhanced for lazy-loading? - false
+2022-03-15 17:49:56 DEBUG TwoPhaseLoad:352 - Done materializing entity [com.revature.model.User#6]
+2022-03-15 17:49:56 DEBUG TransactionImpl:98 - committing
+2022-03-15 17:49:56 DEBUG AbstractFlushingEventListener:140 - Processing flush-time cascades
+2022-03-15 17:49:56 DEBUG AbstractFlushingEventListener:193 - Dirty checking collections
+2022-03-15 17:49:56 DEBUG Collections:213 - Collection found: [com.revature.model.User.gundams#1], was: [com.revature.model.User.gundams#1] (uninitialized)
+2022-03-15 17:49:56 DEBUG Collections:213 - Collection found: [com.revature.model.User.gundams#2], was: [com.revature.model.User.gundams#2] (uninitialized)
+2022-03-15 17:49:56 DEBUG Collections:213 - Collection found: [com.revature.model.User.gundams#3], was: [com.revature.model.User.gundams#3] (uninitialized)
+2022-03-15 17:49:56 DEBUG Collections:213 - Collection found: [com.revature.model.User.gundams#4], was: [com.revature.model.User.gundams#4] (uninitialized)
+2022-03-15 17:49:56 DEBUG Collections:213 - Collection found: [com.revature.model.User.gundams#5], was: [com.revature.model.User.gundams#5] (uninitialized)
+2022-03-15 17:49:56 DEBUG Collections:213 - Collection found: [com.revature.model.User.gundams#6], was: [com.revature.model.User.gundams#6] (uninitialized)
+2022-03-15 17:49:56 DEBUG AbstractFlushingEventListener:114 - Flushed: 0 insertions, 0 updates, 0 deletions to 6 objects
+2022-03-15 17:49:56 DEBUG AbstractFlushingEventListener:121 - Flushed: 0 (re)creations, 0 updates, 0 removals to 6 collections
+2022-03-15 17:49:57 DEBUG EntityPrinter:110 - Listing entities:
+2022-03-15 17:49:57 DEBUG EntityPrinter:117 - com.revature.model.User{password=hello3, gundams=<uninitialized>, name=Winston, userId=3, email=winston@email.com, username=winston}
+2022-03-15 17:49:57 DEBUG EntityPrinter:117 - com.revature.model.User{password=hello2, gundams=<uninitialized>, name=Sequoia, userId=2, email=sequoia@email.com, username=sequoiatree}
+2022-03-15 17:49:57 DEBUG EntityPrinter:117 - com.revature.model.User{password=hello1, gundams=<uninitialized>, name=Phillip, userId=1, email=phil@email.com, username=philvo}
+2022-03-15 17:49:57 DEBUG EntityPrinter:117 - com.revature.model.User{password=hello1, gundams=<uninitialized>, name=Kawhi, userId=6, email=kawhi@email.com, username=theclaw}
+2022-03-15 17:49:57 DEBUG EntityPrinter:117 - com.revature.model.User{password=hello5, gundams=<uninitialized>, name=Oliver, userId=5, email=ollie@email.com, username=ollie}
+2022-03-15 17:49:57 DEBUG EntityPrinter:117 - com.revature.model.User{password=hello4, gundams=<uninitialized>, name=Bruno, userId=4, email=bruno@email.com, username=perroloco}
+2022-03-15 17:49:57 DEBUG LogicalConnectionManagedImpl:174 - Initiating JDBC connection release from afterTransaction
+2022-03-15 17:49:57 DEBUG LogicalConnectionManagedImpl:174 - Initiating JDBC connection release from afterTransaction
+2022-03-15 17:50:05 DEBUG DriverManagerConnectionProviderImpl:284 - Connection pool now considered primed; min-size will be maintained
+2022-03-15 17:50:08 INFO  HibernateUtil:50 - getAllGundam: retrieving all gundam
+2022-03-15 17:50:08 DEBUG TransactionImpl:53 - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2022-03-15 17:50:08 DEBUG TransactionImpl:81 - begin
+2022-03-15 17:50:08 DEBUG QueryTranslatorImpl:292 - parse() - HQL: FROM com.revature.model.Gundam
+2022-03-15 17:50:08 DEBUG ErrorTracker:97 - throwQueryException() : no errors
+2022-03-15 17:50:08 DEBUG QueryTranslatorImpl:313 - --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    \-[SELECT_FROM] Node: 'SELECT_FROM'
+       \-[FROM] Node: 'FROM'
+          \-[RANGE] Node: 'RANGE'
+             \-[DOT] Node: '.'
+                +-[DOT] Node: '.'
+                |  +-[DOT] Node: '.'
+                |  |  +-[IDENT] Node: 'com'
+                |  |  \-[IDENT] Node: 'revature'
+                |  \-[IDENT] Node: 'model'
+                \-[IDENT] Node: 'Gundam'
+
+2022-03-15 17:50:08 DEBUG HqlSqlBaseWalker:129 - select << begin [level=1, statement=select]
+2022-03-15 17:50:08 DEBUG FromElement:153 - FromClause{level=1} : com.revature.model.Gundam (<no alias>) -> gundam0_
+2022-03-15 17:50:08 DEBUG HqlSqlBaseWalker:133 - select : finishing up [level=1, statement=select]
+2022-03-15 17:50:08 DEBUG HqlSqlWalker:762 - processQuery() :  ( SELECT ( FromClause{level=1} gundams gundam0_ ) )
+2022-03-15 17:50:08 DEBUG HqlSqlWalker:1038 - Derived SELECT clause created.
+2022-03-15 17:50:08 DEBUG JoinProcessor:129 - Tables referenced from query nodes:
+ \-QueryNode
+    +-SelectClause
+    | referencedTables(entity Gundam): [gundams]
+    |  +-SelectExpressionImpl
+    |  | persister: SingleTableEntityPersister(com.revature.model.Gundam)
+    |  \-SqlFragment
+    \-FromClause
+       \-FromElement
+
+2022-03-15 17:50:08 DEBUG JoinProcessor:304 - Using FROM fragment [gundams gundam0_]
+2022-03-15 17:50:08 DEBUG HqlSqlBaseWalker:137 - select >> end [level=1, statement=select]
+2022-03-15 17:50:08 DEBUG QueryTranslatorImpl:279 - --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (gundams)
+    +-[SELECT_CLAUSE] SelectClause: '{derived select clause}'
+    |  +-[SELECT_EXPR] SelectExpressionImpl: 'gundam0_.gundam_id as gundam_i1_0_' {FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=null,role=null,tableName=gundams,tableAlias=gundam0_,origin=null,columns={,className=com.revature.model.Gundam}}}
+    |  \-[SQL_TOKEN] SqlFragment: 'gundam0_.model as model2_0_, gundam0_.name as name3_0_, gundam0_.pilot as pilot4_0_, gundam0_.user_id as user_id5_0_'
+    \-[FROM] FromClause: 'FROM' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[], fromElementByTableAlias=[gundam0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+       \-[FROM_FRAGMENT] FromElement: 'gundams gundam0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=null,role=null,tableName=gundams,tableAlias=gundam0_,origin=null,columns={,className=com.revature.model.Gundam}}
+
+2022-03-15 17:50:08 DEBUG ErrorTracker:97 - throwQueryException() : no errors
+2022-03-15 17:50:08 DEBUG QueryTranslatorImpl:258 - HQL: FROM com.revature.model.Gundam
+2022-03-15 17:50:08 DEBUG QueryTranslatorImpl:259 - SQL: select gundam0_.gundam_id as gundam_i1_0_, gundam0_.model as model2_0_, gundam0_.name as name3_0_, gundam0_.pilot as pilot4_0_, gundam0_.user_id as user_id5_0_ from gundams gundam0_
+2022-03-15 17:50:08 DEBUG ErrorTracker:97 - throwQueryException() : no errors
+2022-03-15 17:50:08 DEBUG SQL:144 - select gundam0_.gundam_id as gundam_i1_0_, gundam0_.model as model2_0_, gundam0_.name as name3_0_, gundam0_.pilot as pilot4_0_, gundam0_.user_id as user_id5_0_ from gundams gundam0_
+2022-03-15 17:50:08 DEBUG Loader:384 - Result set row: 0
+2022-03-15 17:50:08 DEBUG Loader:1595 - Result row: EntityKey[com.revature.model.Gundam#1]
+2022-03-15 17:50:08 DEBUG Loader:384 - Result set row: 1
+2022-03-15 17:50:08 DEBUG Loader:1595 - Result row: EntityKey[com.revature.model.Gundam#2]
+2022-03-15 17:50:08 DEBUG Loader:384 - Result set row: 2
+2022-03-15 17:50:08 DEBUG Loader:1595 - Result row: EntityKey[com.revature.model.Gundam#3]
+2022-03-15 17:50:08 DEBUG Loader:384 - Result set row: 3
+2022-03-15 17:50:08 DEBUG Loader:1595 - Result row: EntityKey[com.revature.model.Gundam#4]
+2022-03-15 17:50:08 DEBUG Loader:384 - Result set row: 4
+2022-03-15 17:50:08 DEBUG Loader:1595 - Result row: EntityKey[com.revature.model.Gundam#5]
+2022-03-15 17:50:08 DEBUG Loader:384 - Result set row: 5
+2022-03-15 17:50:08 DEBUG Loader:1595 - Result row: EntityKey[com.revature.model.Gundam#6]
+2022-03-15 17:50:08 DEBUG TwoPhaseLoad:171 - Resolving attributes for [com.revature.model.Gundam#1]
+2022-03-15 17:50:08 DEBUG TwoPhaseLoad:184 - Processing attribute `model` : value = ASW-G-08
+2022-03-15 17:50:08 DEBUG TwoPhaseLoad:215 - Attribute (`model`)  - enhanced for lazy-loading? - false
+2022-03-15 17:50:08 DEBUG TwoPhaseLoad:184 - Processing attribute `name` : value = Gundam Barbatos
+2022-03-15 17:50:08 DEBUG TwoPhaseLoad:215 - Attribute (`name`)  - enhanced for lazy-loading? - false
+2022-03-15 17:50:08 DEBUG TwoPhaseLoad:184 - Processing attribute `pilot` : value = Mikazuki Augus
+2022-03-15 17:50:08 DEBUG TwoPhaseLoad:215 - Attribute (`pilot`)  - enhanced for lazy-loading? - false
+2022-03-15 17:50:08 DEBUG TwoPhaseLoad:184 - Processing attribute `user` : value = 1
+2022-03-15 17:50:08 DEBUG TwoPhaseLoad:215 - Attribute (`user`)  - enhanced for lazy-loading? - false
+2022-03-15 17:50:09 DEBUG SQL:144 - select user0_.user_id as user_id1_1_0_, user0_.email as email2_1_0_, user0_.name as name3_1_0_, user0_.password as password4_1_0_, user0_.username as username5_1_0_ from users user0_ where user0_.user_id=?
+2022-03-15 17:50:09 DEBUG EntityReferenceInitializerImpl:131 - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+2022-03-15 17:50:09 DEBUG TwoPhaseLoad:171 - Resolving attributes for [com.revature.model.User#1]
+2022-03-15 17:50:09 DEBUG TwoPhaseLoad:184 - Processing attribute `email` : value = phil@email.com
+2022-03-15 17:50:09 DEBUG TwoPhaseLoad:215 - Attribute (`email`)  - enhanced for lazy-loading? - false
+2022-03-15 17:50:09 DEBUG TwoPhaseLoad:184 - Processing attribute `gundams` : value = NOT NULL COLLECTION
+2022-03-15 17:50:09 DEBUG TwoPhaseLoad:215 - Attribute (`gundams`)  - enhanced for lazy-loading? - false
+2022-03-15 17:50:09 DEBUG TwoPhaseLoad:184 - Processing attribute `name` : value = Phillip
+2022-03-15 17:50:09 DEBUG TwoPhaseLoad:215 - Attribute (`name`)  - enhanced for lazy-loading? - false
+2022-03-15 17:50:09 DEBUG TwoPhaseLoad:184 - Processing attribute `password` : value = hello1
+2022-03-15 17:50:09 DEBUG TwoPhaseLoad:215 - Attribute (`password`)  - enhanced for lazy-loading? - false
+2022-03-15 17:50:09 DEBUG TwoPhaseLoad:184 - Processing attribute `username` : value = philvo
+2022-03-15 17:50:09 DEBUG TwoPhaseLoad:215 - Attribute (`username`)  - enhanced for lazy-loading? - false
+2022-03-15 17:50:09 DEBUG TwoPhaseLoad:352 - Done materializing entity [com.revature.model.User#1]
+2022-03-15 17:50:09 DEBUG AbstractLoadPlanBasedEntityLoader:307 - Done entity load : com.revature.model.User#1
+2022-03-15 17:50:09 DEBUG TwoPhaseLoad:352 - Done materializing entity [com.revature.model.Gundam#1]
+2022-03-15 17:50:09 DEBUG TwoPhaseLoad:171 - Resolving attributes for [com.revature.model.Gundam#2]
+2022-03-15 17:50:09 DEBUG TwoPhaseLoad:184 - Processing attribute `model` : value = RX-0
+2022-03-15 17:50:09 DEBUG TwoPhaseLoad:215 - Attribute (`model`)  - enhanced for lazy-loading? - false
+2022-03-15 17:50:09 DEBUG TwoPhaseLoad:184 - Processing attribute `name` : value = Unicorn Gundam
+2022-03-15 17:50:09 DEBUG TwoPhaseLoad:215 - Attribute (`name`)  - enhanced for lazy-loading? - false
+2022-03-15 17:50:09 DEBUG TwoPhaseLoad:184 - Processing attribute `pilot` : value = Banagher Links
+2022-03-15 17:50:09 DEBUG TwoPhaseLoad:215 - Attribute (`pilot`)  - enhanced for lazy-loading? - false
+2022-03-15 17:50:09 DEBUG TwoPhaseLoad:184 - Processing attribute `user` : value = 1
+2022-03-15 17:50:09 DEBUG TwoPhaseLoad:215 - Attribute (`user`)  - enhanced for lazy-loading? - false
+2022-03-15 17:50:09 DEBUG TwoPhaseLoad:352 - Done materializing entity [com.revature.model.Gundam#2]
+2022-03-15 17:50:09 DEBUG TwoPhaseLoad:171 - Resolving attributes for [com.revature.model.Gundam#3]
+2022-03-15 17:50:09 DEBUG TwoPhaseLoad:184 - Processing attribute `model` : value = XXXG-01W
+2022-03-15 17:50:09 DEBUG TwoPhaseLoad:215 - Attribute (`model`)  - enhanced for lazy-loading? - false
+2022-03-15 17:50:09 DEBUG TwoPhaseLoad:184 - Processing attribute `name` : value = Wing Gundam
+2022-03-15 17:50:09 DEBUG TwoPhaseLoad:215 - Attribute (`name`)  - enhanced for lazy-loading? - false
+2022-03-15 17:50:09 DEBUG TwoPhaseLoad:184 - Processing attribute `pilot` : value = Heero Yuy
+2022-03-15 17:50:09 DEBUG TwoPhaseLoad:215 - Attribute (`pilot`)  - enhanced for lazy-loading? - false
+2022-03-15 17:50:09 DEBUG TwoPhaseLoad:184 - Processing attribute `user` : value = 2
+2022-03-15 17:50:09 DEBUG TwoPhaseLoad:215 - Attribute (`user`)  - enhanced for lazy-loading? - false
+2022-03-15 17:50:09 DEBUG SQL:144 - select user0_.user_id as user_id1_1_0_, user0_.email as email2_1_0_, user0_.name as name3_1_0_, user0_.password as password4_1_0_, user0_.username as username5_1_0_ from users user0_ where user0_.user_id=?
+2022-03-15 17:50:09 DEBUG EntityReferenceInitializerImpl:131 - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+2022-03-15 17:50:09 DEBUG TwoPhaseLoad:171 - Resolving attributes for [com.revature.model.User#2]
+2022-03-15 17:50:09 DEBUG TwoPhaseLoad:184 - Processing attribute `email` : value = sequoia@email.com
+2022-03-15 17:50:09 DEBUG TwoPhaseLoad:215 - Attribute (`email`)  - enhanced for lazy-loading? - false
+2022-03-15 17:50:09 DEBUG TwoPhaseLoad:184 - Processing attribute `gundams` : value = NOT NULL COLLECTION
+2022-03-15 17:50:09 DEBUG TwoPhaseLoad:215 - Attribute (`gundams`)  - enhanced for lazy-loading? - false
+2022-03-15 17:50:09 DEBUG TwoPhaseLoad:184 - Processing attribute `name` : value = Sequoia
+2022-03-15 17:50:09 DEBUG TwoPhaseLoad:215 - Attribute (`name`)  - enhanced for lazy-loading? - false
+2022-03-15 17:50:09 DEBUG TwoPhaseLoad:184 - Processing attribute `password` : value = hello2
+2022-03-15 17:50:09 DEBUG TwoPhaseLoad:215 - Attribute (`password`)  - enhanced for lazy-loading? - false
+2022-03-15 17:50:09 DEBUG TwoPhaseLoad:184 - Processing attribute `username` : value = sequoiatree
+2022-03-15 17:50:09 DEBUG TwoPhaseLoad:215 - Attribute (`username`)  - enhanced for lazy-loading? - false
+2022-03-15 17:50:09 DEBUG TwoPhaseLoad:352 - Done materializing entity [com.revature.model.User#2]
+2022-03-15 17:50:09 DEBUG AbstractLoadPlanBasedEntityLoader:307 - Done entity load : com.revature.model.User#2
+2022-03-15 17:50:09 DEBUG TwoPhaseLoad:352 - Done materializing entity [com.revature.model.Gundam#3]
+2022-03-15 17:50:09 DEBUG TwoPhaseLoad:171 - Resolving attributes for [com.revature.model.Gundam#4]
+2022-03-15 17:50:09 DEBUG TwoPhaseLoad:184 - Processing attribute `model` : value = MS-05L
+2022-03-15 17:50:09 DEBUG TwoPhaseLoad:215 - Attribute (`model`)  - enhanced for lazy-loading? - false
+2022-03-15 17:50:09 DEBUG TwoPhaseLoad:184 - Processing attribute `name` : value = Zaku 1 Sniper
+2022-03-15 17:50:09 DEBUG TwoPhaseLoad:215 - Attribute (`name`)  - enhanced for lazy-loading? - false
+2022-03-15 17:50:09 DEBUG TwoPhaseLoad:184 - Processing attribute `pilot` : value = Yonem Kirks
+2022-03-15 17:50:09 DEBUG TwoPhaseLoad:215 - Attribute (`pilot`)  - enhanced for lazy-loading? - false
+2022-03-15 17:50:09 DEBUG TwoPhaseLoad:184 - Processing attribute `user` : value = 2
+2022-03-15 17:50:09 DEBUG TwoPhaseLoad:215 - Attribute (`user`)  - enhanced for lazy-loading? - false
+2022-03-15 17:50:09 DEBUG TwoPhaseLoad:352 - Done materializing entity [com.revature.model.Gundam#4]
+2022-03-15 17:50:09 DEBUG TwoPhaseLoad:171 - Resolving attributes for [com.revature.model.Gundam#5]
+2022-03-15 17:50:09 DEBUG TwoPhaseLoad:184 - Processing attribute `model` : value = MBF-P02
+2022-03-15 17:50:09 DEBUG TwoPhaseLoad:215 - Attribute (`model`)  - enhanced for lazy-loading? - false
+2022-03-15 17:50:09 DEBUG TwoPhaseLoad:184 - Processing attribute `name` : value = Gundam Astray Red Frame
+2022-03-15 17:50:09 DEBUG TwoPhaseLoad:215 - Attribute (`name`)  - enhanced for lazy-loading? - false
+2022-03-15 17:50:09 DEBUG TwoPhaseLoad:184 - Processing attribute `pilot` : value = Lowe Guele
+2022-03-15 17:50:09 DEBUG TwoPhaseLoad:215 - Attribute (`pilot`)  - enhanced for lazy-loading? - false
+2022-03-15 17:50:09 DEBUG TwoPhaseLoad:184 - Processing attribute `user` : value = 3
+2022-03-15 17:50:09 DEBUG TwoPhaseLoad:215 - Attribute (`user`)  - enhanced for lazy-loading? - false
+2022-03-15 17:50:09 DEBUG SQL:144 - select user0_.user_id as user_id1_1_0_, user0_.email as email2_1_0_, user0_.name as name3_1_0_, user0_.password as password4_1_0_, user0_.username as username5_1_0_ from users user0_ where user0_.user_id=?
+2022-03-15 17:50:09 DEBUG EntityReferenceInitializerImpl:131 - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+2022-03-15 17:50:09 DEBUG TwoPhaseLoad:171 - Resolving attributes for [com.revature.model.User#3]
+2022-03-15 17:50:09 DEBUG TwoPhaseLoad:184 - Processing attribute `email` : value = winston@email.com
+2022-03-15 17:50:09 DEBUG TwoPhaseLoad:215 - Attribute (`email`)  - enhanced for lazy-loading? - false
+2022-03-15 17:50:09 DEBUG TwoPhaseLoad:184 - Processing attribute `gundams` : value = NOT NULL COLLECTION
+2022-03-15 17:50:09 DEBUG TwoPhaseLoad:215 - Attribute (`gundams`)  - enhanced for lazy-loading? - false
+2022-03-15 17:50:09 DEBUG TwoPhaseLoad:184 - Processing attribute `name` : value = Winston
+2022-03-15 17:50:09 DEBUG TwoPhaseLoad:215 - Attribute (`name`)  - enhanced for lazy-loading? - false
+2022-03-15 17:50:09 DEBUG TwoPhaseLoad:184 - Processing attribute `password` : value = hello3
+2022-03-15 17:50:09 DEBUG TwoPhaseLoad:215 - Attribute (`password`)  - enhanced for lazy-loading? - false
+2022-03-15 17:50:09 DEBUG TwoPhaseLoad:184 - Processing attribute `username` : value = winston
+2022-03-15 17:50:09 DEBUG TwoPhaseLoad:215 - Attribute (`username`)  - enhanced for lazy-loading? - false
+2022-03-15 17:50:09 DEBUG TwoPhaseLoad:352 - Done materializing entity [com.revature.model.User#3]
+2022-03-15 17:50:09 DEBUG AbstractLoadPlanBasedEntityLoader:307 - Done entity load : com.revature.model.User#3
+2022-03-15 17:50:09 DEBUG TwoPhaseLoad:352 - Done materializing entity [com.revature.model.Gundam#5]
+2022-03-15 17:50:09 DEBUG TwoPhaseLoad:171 - Resolving attributes for [com.revature.model.Gundam#6]
+2022-03-15 17:50:09 DEBUG TwoPhaseLoad:184 - Processing attribute `model` : value = 0Z-00MS
+2022-03-15 17:50:09 DEBUG TwoPhaseLoad:215 - Attribute (`model`)  - enhanced for lazy-loading? - false
+2022-03-15 17:50:09 DEBUG TwoPhaseLoad:184 - Processing attribute `name` : value = Tallgeese
+2022-03-15 17:50:09 DEBUG TwoPhaseLoad:215 - Attribute (`name`)  - enhanced for lazy-loading? - false
+2022-03-15 17:50:09 DEBUG TwoPhaseLoad:184 - Processing attribute `pilot` : value = Zechs Merquise
+2022-03-15 17:50:09 DEBUG TwoPhaseLoad:215 - Attribute (`pilot`)  - enhanced for lazy-loading? - false
+2022-03-15 17:50:09 DEBUG TwoPhaseLoad:184 - Processing attribute `user` : value = 3
+2022-03-15 17:50:09 DEBUG TwoPhaseLoad:215 - Attribute (`user`)  - enhanced for lazy-loading? - false
+2022-03-15 17:50:09 DEBUG TwoPhaseLoad:352 - Done materializing entity [com.revature.model.Gundam#6]
+2022-03-15 17:50:09 DEBUG TransactionImpl:98 - committing
+2022-03-15 17:50:09 DEBUG AbstractFlushingEventListener:140 - Processing flush-time cascades
+2022-03-15 17:50:09 DEBUG AbstractFlushingEventListener:193 - Dirty checking collections
+2022-03-15 17:50:09 DEBUG Collections:213 - Collection found: [com.revature.model.User.gundams#1], was: [com.revature.model.User.gundams#1] (uninitialized)
+2022-03-15 17:50:09 DEBUG Collections:213 - Collection found: [com.revature.model.User.gundams#2], was: [com.revature.model.User.gundams#2] (uninitialized)
+2022-03-15 17:50:09 DEBUG Collections:213 - Collection found: [com.revature.model.User.gundams#3], was: [com.revature.model.User.gundams#3] (uninitialized)
+2022-03-15 17:50:09 DEBUG AbstractFlushingEventListener:114 - Flushed: 0 insertions, 0 updates, 0 deletions to 9 objects
+2022-03-15 17:50:09 DEBUG AbstractFlushingEventListener:121 - Flushed: 0 (re)creations, 0 updates, 0 removals to 3 collections
+2022-03-15 17:50:09 DEBUG EntityPrinter:110 - Listing entities:
+2022-03-15 17:50:09 DEBUG EntityPrinter:117 - com.revature.model.User{password=hello3, gundams=<uninitialized>, name=Winston, userId=3, email=winston@email.com, username=winston}
+2022-03-15 17:50:09 DEBUG EntityPrinter:117 - com.revature.model.User{password=hello2, gundams=<uninitialized>, name=Sequoia, userId=2, email=sequoia@email.com, username=sequoiatree}
+2022-03-15 17:50:09 DEBUG EntityPrinter:117 - com.revature.model.User{password=hello1, gundams=<uninitialized>, name=Phillip, userId=1, email=phil@email.com, username=philvo}
+2022-03-15 17:50:09 DEBUG EntityPrinter:117 - com.revature.model.Gundam{pilot=Mikazuki Augus, name=Gundam Barbatos, model=ASW-G-08, gundamId=1, user=com.revature.model.User#1}
+2022-03-15 17:50:09 DEBUG EntityPrinter:117 - com.revature.model.Gundam{pilot=Banagher Links, name=Unicorn Gundam, model=RX-0, gundamId=2, user=com.revature.model.User#1}
+2022-03-15 17:50:09 DEBUG EntityPrinter:117 - com.revature.model.Gundam{pilot=Lowe Guele, name=Gundam Astray Red Frame, model=MBF-P02, gundamId=5, user=com.revature.model.User#3}
+2022-03-15 17:50:09 DEBUG EntityPrinter:117 - com.revature.model.Gundam{pilot=Zechs Merquise, name=Tallgeese, model=0Z-00MS, gundamId=6, user=com.revature.model.User#3}
+2022-03-15 17:50:09 DEBUG EntityPrinter:117 - com.revature.model.Gundam{pilot=Heero Yuy, name=Wing Gundam, model=XXXG-01W, gundamId=3, user=com.revature.model.User#2}
+2022-03-15 17:50:09 DEBUG EntityPrinter:117 - com.revature.model.Gundam{pilot=Yonem Kirks, name=Zaku 1 Sniper, model=MS-05L, gundamId=4, user=com.revature.model.User#2}
+2022-03-15 17:50:09 DEBUG LogicalConnectionManagedImpl:174 - Initiating JDBC connection release from afterTransaction
+2022-03-15 17:50:09 DEBUG LogicalConnectionManagedImpl:174 - Initiating JDBC connection release from afterTransaction
