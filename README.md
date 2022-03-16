@@ -20,6 +20,6 @@
 - Users can post/view forum topics
 - Users can upload pictures to catalog
 ## Getting Started 
-In order to see this project in action, you will need a few things
-1- Be sure to have Apache Tomcat 9.0 installed
-2- Be sure to have the Java 17 runtime enviroment installed.
+In order to see this project in action, you will need a few things:
+1 - Be sure to have Apache Tomcat 9.0 installed
+2 - Be sure to have the Java 17 runtime enviroment installed.
