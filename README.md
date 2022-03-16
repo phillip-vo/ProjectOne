@@ -17,4 +17,6 @@
 - New users can sign up
 - Users can upload/update model catalog
 ### Upcoming Features
-- 
+- Users can post/view forum topics
+- Users can upload pictures to catalog
+## Getting Started / Usage
