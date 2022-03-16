@@ -29,4 +29,5 @@ In order to see this project in action, you will need a few things:
 2. Be sure to have the Java 17 runtime enviroment installed
 
 If both of the pre-requisites above are met, go ahead and clone this repo by using the below command:
+  
   https://github.com/phillip-vo/ProjectOne.git
