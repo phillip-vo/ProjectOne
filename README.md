@@ -1,5 +1,5 @@
 ﻿# Project One - Project Gundam
-## Forum and Cataloging Demo
+## Forum and Catalog Demo
 ## Overview
 - A full stack web application that allows Gundam model enthusiasts to connect, catalog various models, and showcase what they have built. 
 ## Technologies
@@ -10,4 +10,9 @@
 - Apache Maven
 - Apache Tomcat 9.0
 - Log4j API 1.2.17
-
+- Jackson Core/Jackson Databind
+## Features
+### User Features
+- Users can login
+- New users can sign up
+- Users can upload/update model catalog
