@@ -16,3 +16,5 @@
 - Users can login
 - New users can sign up
 - Users can upload/update model catalog
+### Upcoming Features
+- 
