@@ -1,7 +1,9 @@
 ﻿# Project Gundam
 ## Forum and Catalog Demo
+
 ## Overview
 - A full stack web application that allows Gundam model enthusiasts to connect, catalog, and showcase what they have built. 
+
 ## Technologies
 - Java 17
 - Java Servlets API
@@ -11,6 +13,7 @@
 - Apache Tomcat 9.0
 - Log4j API 1.2.17
 - Jackson Core/Jackson Databind
+
 ## Features
 #### User Features
 - Users can login
@@ -19,6 +22,7 @@
 #### Upcoming Features
 - Users can post/view forum topics
 - Users can upload pictures to catalog
+
 ## Getting Started 
 In order to see this project in action, you will need a few things:
 1. Be sure to have Apache Tomcat 9.0 installed
