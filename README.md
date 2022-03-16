@@ -30,4 +30,4 @@ In order to see this project in action, you will need a few things:
 
 If both of the pre-requisites above are met, go ahead and clone this repo by using the below command:
   
-  https://github.com/phillip-vo/ProjectOne.git
+  git clone https://github.com/phillip-vo/ProjectOne.git
