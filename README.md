@@ -12,11 +12,11 @@
 - Log4j API 1.2.17
 - Jackson Core/Jackson Databind
 ## Features
-### User Features
+#### User Features
 - Users can login
 - New users can sign up
 - Users can upload/update model catalog
-### Upcoming Features
+#### Upcoming Features
 - Users can post/view forum topics
 - Users can upload pictures to catalog
 ## Getting Started / Usage
