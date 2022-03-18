@@ -1,5 +1,6 @@
 ﻿# Project Gundam
 ## Forum and Catalog Demo
+![Application login screen](https://github.com/phillip-vo/ProjectOne/blob/main/src/main/webapp/img/project-gundam-login.PNG)
 
 ## Overview
 - A full stack web application that allows Gundam model enthusiasts to connect, catalog, and showcase what they have built. 
